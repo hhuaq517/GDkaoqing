@@ -56,8 +56,9 @@
         <div class="map-wrap">
           <div class="map-panel">
             <div class="svg-tabs" id="mapTabs"></div>
+            <div class="map-crumb" id="mapCrumb"></div>
             <div id="mapBox" style="margin-top:10px"></div>
-            <div class="hint">💡 悬停城市→查看考情；点击城市→跳转该地区详细查找。区域底色：红色=珠三角报考热，绿色=人口密集。</div>
+            <div class="hint">💡 悬停城市/县区→查看考情；点击城市→下钻县区；点击县区→跳转该县详细查找。本图使用真实行政区划边界。</div>
           </div>
           <div class="side-card">
             <div class="hover-card" id="hoverCard">
@@ -71,6 +72,7 @@
                 <div class="kv"><div class="k">考情记录</div><div class="v" id="statKq">–</div></div>
                 <div class="kv"><div class="k">真题文件夹</div><div class="v" id="statZt">–</div></div>
                 <div class="kv"><div class="k">真题文件数</div><div class="v" id="statZtF">–</div></div>
+                <div class="kv"><div class="k">县区级覆盖</div><div class="v" id="statArea">–</div></div>
               </div>
             </div>
           </div>
@@ -232,6 +234,8 @@
 
 <script src="data/settings.js"></script>
 <script src="data/projects.js"></script>
+<script src="data/districts.js"></script>
+<script src="data/county_kaoqing.js"></script>
 <script src="data/kaoqing.js"></script>
 <script src="data/zhenti.js"></script>
 <script src="assets/maps/gd_map.js"></script>

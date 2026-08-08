@@ -120,6 +120,14 @@ button{font-family:inherit;cursor:pointer}
 .gd-city circle,.gd-city rect{transition:opacity .15s}
 .gd-city.dim{opacity:.30}
 .gd-city.dim text{opacity:.7}
+.gd-city path,.gd-dist path{transition:fill .15s,opacity .15s;cursor:pointer}
+.gd-city:hover path{fill:#7fb3e0}
+.gd-dist{cursor:pointer}
+.gd-dist:hover path{fill:#6ea8d8}
+.gd-dist.dim{opacity:.28}
+.gd-dist.dim text{opacity:.7}
+.map-crumb{display:flex;align-items:center;gap:8px;margin-top:8px;flex-wrap:wrap}
+.text-muted{color:var(--muted);font-size:12px}
 .gd-muted{opacity:.32}
 
 /* 列表(真题索引) */

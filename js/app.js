@@ -34,8 +34,9 @@ window.App = (function(){
   }
   function allRecords(){
     const base = (window.KAOQING && window.KAOQING.records) ? KAOQING.records.slice() : [];
-    if(session && session.records) return base.concat(session.records);
-    return base;
+    const county = (window.COUNTY_KAOQING && Array.isArray(window.COUNTY_KAOQING)) ? COUNTY_KAOQING : [];
+    if(session && session.records) return base.concat(county, session.records);
+    return base.concat(county);
   }
   function saveSession(){ store.set(SESSION_KEY, JSON.stringify(session)); }
   function toast(msg,ms=2200){
@@ -112,6 +113,11 @@ window.App = (function(){
     document.getElementById('statKq').textContent=(window.KAOQING.records? KAOQING.records.length:0)+' 条';
     document.getElementById('statZt').textContent=folders;
     document.getElementById('statZtF').textContent=files;
+    // 县区覆盖：记录中 area 触及的县区数
+    const recs=allRecords();
+    const areaSet=new Set(recs.filter(r=>r.area).map(r=>r.region.replace(/地区$/,'')+':'+r.area));
+    const cov=document.getElementById('statArea');
+    if(cov){ cov.textContent=areaSet.size+' 个县区'; }
     document.getElementById('dataBadge').textContent='数据更新至 '+(SETTINGS.updatedAt||'-');
   }
 
