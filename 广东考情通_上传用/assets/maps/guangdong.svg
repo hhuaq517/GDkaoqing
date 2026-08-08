@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 128" class="gd-map" role="img" aria-label="广东省考情地图">
+  <defs>
+    <linearGradient id="bz" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef7ff"/>
+      <stop offset="100%" stop-color="#d8ebfb"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bfe0f5"/>
+      <stop offset="100%" stop-color="#a9d3ef"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#0b4f8c" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- 海域底色 -->
+  <rect x="0" y="0" width="190" height="176" rx="26" fill="url(#water)"/>
+
+  <!-- 广东省域形状(抽象) -->
+  <path d="M26,110 C20,96 40,86 58,70 C82,86 120,84 150,62 C172,90 150,108 120,112 C142,130 168,138 150,168 C120,176 90,174 70,152 C58,158 40,150 34,134 C20,126 30,118 26,110 Z"
+        fill="#ffffff" opacity="0.55"/>
+
+  <!-- 省级统考锚点 -->
+  <g class="gd-city province" data-region="广东地区" data-name="广东全省" transform="translate(26,22)">
+    <rect x="-58" y="-12" width="116" height="22" rx="11" fill="#7a4fb5" filter="url(#sh)"/>
+    <text x="0" y="3.6" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">国考·省考·选调</text>
+  </g>
+
+  <!-- 城市节点 -->
+  <g class="gd-cities">
+    <g class="gd-city" data-region="广州地区" data-name="广州" transform="translate(104,60)"><circle r="11" fill="#e1524f" filter="url(#sh)"/><text y="4" text-anchor="middle" font-size="7" fill="#fff" font-weight="700">广州</text></g>
+    <g class="gd-city" data-region="韶关地区" data-name="韶关" transform="translate(114,24)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">韶关</text></g>
+    <g class="gd-city" data-region="清远地区" data-name="清远" transform="translate(86,40)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">清远</text></g>
+    <g class="gd-city" data-region="梅州地区" data-name="梅州" transform="translate(164,40)"><circle r="10" fill="#2f7fb6" filter="url(#sh)"/><text y="3.6" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">梅州</text></g>
+    <g class="gd-city" data-region="河源地区" data-name="河源" transform="translate(142,52)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">河源</text></g>
+    <g class="gd-city" data-region="汕头地区" data-name="汕头" transform="translate(170,66)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">汕头</text></g>
+    <g class="gd-city" data-region="揭阳地区" data-name="揭阳" transform="translate(116,66)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">揭阳</text></g>
+    <g class="gd-city" data-region="潮州地区" data-name="潮州" transform="translate(187,54)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">潮州</text></g>
+    <g class="gd-city" data-region="汕尾地区" data-name="汕尾" transform="translate(176,52)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">汕尾</text></g>
+    <g class="gd-city" data-region="惠州地区" data-name="惠州" transform="translate(178,48)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">惠州</text></g>
+    <g class="gd-city" data-region="东莞地区" data-name="东莞" transform="translate(146,68)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">东莞</text></g>
+    <g class="gd-city" data-region="深圳地区" data-name="深圳" transform="translate(160,66)"><circle r="11" fill="#e1524f" filter="url(#sh)"/><text y="4" text-anchor="middle" font-size="7" fill="#fff" font-weight="700">深圳</text></g>
+    <g class="gd-city" data-region="中山地区" data-name="中山" transform="translate(118,96)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">中山</text></g>
+    <g class="gd-city" data-region="珠海地区" data-name="珠海" transform="translate(148,118)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">珠海</text></g>
+    <g class="gd-city" data-region="江门地区" data-name="江门" transform="translate(98,102)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">江门</text></g>
+    <g class="gd-city" data-region="佛山地区" data-name="佛山" transform="translate(140,64)"><circle r="9" fill="#1f9e6f" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">佛山</text></g>
+    <g class="gd-city" data-region="肇庆地区" data-name="肇庆" transform="translate(96,90)"><circle r="10" fill="#2f7fb6" filter="url(#sh)"/><text y="3.6" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">肇庆</text></g>
+    <g class="gd-city" data-region="云浮地区" data-name="云浮" transform="translate(70,96)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">云浮</text></g>
+    <g class="gd-city" data-region="阳江地区" data-name="阳江" transform="translate(50,116)"><circle r="9" fill="#2f7fb6" filter="url(#sh)"/><text y="3.2" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">阳江</text></g>
+    <g class="gd-city" data-region="茂名地区" data-name="茂名" transform="translate(52,140)"><circle r="10" fill="#2f7fb6" filter="url(#sh)"/><text y="3.6" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">茂名</text></g>
+    <g class="gd-city" data-region="湛江地区" data-name="湛江" transform="translate(22,160)"><circle r="10" fill="#2f7fb6" filter="url(#sh)"/><text y="3.6" text-anchor="middle" font-size="6.6" fill="#fff" font-weight="700">湛江</text></g>
+  </g>
+
+  <!-- 图例 -->
+  <g transform="translate(8,132)">
+    <circle cx="4" cy="0" r="4" fill="#e1524f"/><text x="11" y="2.6" font-size="6.5" fill="#14405e">珠三角发达/报考热</text>
+    <circle cx="150" cy="0" r="4" fill="#1f9e6f"/><text x="157" y="2.6" font-size="6.5" fill="#14405e">常住人口密集</text>
+  </g>
+</svg>

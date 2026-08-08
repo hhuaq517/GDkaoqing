@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>广东考情通</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app" id="app">
+
+  <!-- ======= 左侧功能菜单 ======= -->
+  <aside class="side" id="side">
+    <div class="brand-row">
+      <div class="brand-logo">粤</div>
+      <div>
+        <div class="t" id="siteTitle">广东考情通</div>
+        <div class="s" id="siteSlogan">广东各地区各项目考情查询</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-group">
+        <div class="nav-group-title">功能模块</div>
+        <button class="nav-item active" data-view="overview"><span class="ico">🗺️</span>广东考情总览</button>
+        <button class="nav-item" data-view="search"><span class="ico">🔍</span>地区考情查找</button>
+        <button class="nav-item" data-view="import"><span class="ico">📥</span>考情导入</button>
+        <button class="nav-item" data-view="settings"><span class="ico">⚙️</span>设置</button>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-title">快捷入口</div>
+        <button class="nav-item" data-view="search" data-quick="shiye"><span class="ico">🏛️</span>事业单位考情</button>
+        <button class="nav-item" data-view="search" data-quick="jiao"><span class="ico">👩‍🏫</span>教师招聘考情</button>
+        <button class="nav-item" data-view="search" data-quick="yiliao"><span class="ico">🏥</span>医疗招聘考情</button>
+        <button class="nav-item" data-view="search" data-quick="zhenti"><span class="ico">📚</span>真题索引目录</button>
+      </div>
+    </nav>
+    <div class="side-foot">数据由机构真题库+公开信息整理<br>点“考情导入/设置”可持续更新</div>
+  </aside>
+
+  <div class="divider" id="divider" title="拖动调整左右比例"></div>
+
+  <!-- ======= 右侧展示区 ======= -->
+  <main class="main" id="main">
+    <div class="topbar">
+      <h1 id="pageTitle">广东考情总览</h1>
+      <span class="crumb" id="crumb"></span>
+      <span class="spacer"></span>
+      <span class="badge" id="dataBadge"></span>
+      <button class="btn ghost sm" onclick="App.exportAll()" title="导出当前全部数据为JSON">导出数据</button>
+    </div>
+
+    <!-- ① 广东考情总览 -->
+    <section class="view active" id="view-overview">
+      <div class="card">
+        <h3>广东省考情地图 <small>切换项目后，鼠标悬停地图上的地市即可查看该市考情说明</small></h3>
+        <div class="map-wrap">
+          <div class="map-panel">
+            <div class="svg-tabs" id="mapTabs"></div>
+            <div id="mapBox" style="margin-top:10px"></div>
+            <div class="hint">💡 悬停城市→查看考情；点击城市→跳转该地区详细查找。区域底色：红色=珠三角报考热，绿色=人口密集。</div>
+          </div>
+          <div class="side-card">
+            <div class="hover-card" id="hoverCard">
+              <b>👆 把鼠标移到地图城市上</b><br><br>
+              这里会显示对应地市的考情速览。
+            </div>
+            <div class="card" style="margin:0">
+              <h3>统计概览</h3>
+              <div class="kv-grid">
+                <div class="kv"><div class="k">地市覆盖</div><div class="v" id="statCity">–</div></div>
+                <div class="kv"><div class="k">考情记录</div><div class="v" id="statKq">–</div></div>
+                <div class="kv"><div class="k">真题文件夹</div><div class="v" id="statZt">–</div></div>
+                <div class="kv"><div class="k">真题文件数</div><div class="v" id="statZtF">–</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="overviewProjectCard">
+        <h3 id="ovProjTitle">当前项目：省级统考</h3>
+        <div id="ovProjBody" class="pre-wrap">选择地图上方项目标签后，此处展示该项目全省考情要览。</div>
+      </div>
+    </section>
+
+    <!-- ② 地区考情查找 -->
+    <section class="view" id="view-search">
+      <div class="card">
+        <h3>多维筛选 <small>可按地区 / 项目 / 年份 / 关键词组合查找</small></h3>
+        <div class="filters">
+          <label>地区
+            <select id="fRegion"><option value="">全部地区</option></select>
+          </label>
+          <label>项目
+            <select id="fProject"><option value="">全部项目</option></select>
+          </label>
+          <label>年份
+            <select id="fYear"><option value="">全部年份</option></select>
+          </label>
+          <label>县区/单位
+            <input type="text" id="fArea" placeholder="如：乳源 / 市直 / 天河">
+          </label>
+          <label>关键词
+            <input type="text" id="fKw" placeholder="如：教综 / 统考 / 结构化">
+          </label>
+          <button class="btn primary" onclick="App.search()">查 找</button>
+          <button class="btn ghost" onclick="App.resetSearch()">重 置</button>
+          <label style="margin-left:auto"><span id="searchInfo">0 条结果</span></label>
+        </div>
+      </div>
+      <div id="searchResults"></div>
+      <div class="card" id="zhentiPanel" style="display:none">
+        <h3>真题索引目录 <small>由机构真题库自动生成，实时可查</small></h3>
+        <div class="filters" style="margin-bottom:10px">
+          <label>地区<select id="ztRegion"></select></label>
+          <label>项目<select id="ztProject"></select></label>
+          <button class="btn primary sm" onclick="App.ztSearch()">查 看</button>
+        </div>
+        <div id="ztTree"></div>
+      </div>
+    </section>
+
+    <!-- ③ 考情导入 -->
+    <section class="view" id="view-import">
+      <div class="card">
+        <h3>管理员验证 <small>导入/编辑/设置均需口令</small></h3>
+        <div class="filters">
+          <label>管理员口令
+            <input type="password" id="adminPwd" placeholder="输入管理员口令">
+          </label>
+          <button class="btn primary" onclick="App.login()">验 证</button>
+          <span class="hint" id="loginMsg"></span>
+        </div>
+      </div>
+      <div id="importArea" style="opacity:.45;pointer-events:none">
+        <div class="card">
+          <h3>① 单条导入 <small>填写表单，一条一条录入</small></h3>
+          <div class="grid cols3">
+            <label class="field">地区<select id="impRegion"></select></label>
+            <label class="field">项目<select id="impProject"></select></label>
+            <label class="field">县区/单位<input type="text" id="impArea" placeholder="可空，如：乳源"></label>
+            <label class="field">标题<input type="text" id="impTitle" placeholder="如：韶关乳源教师招聘"></label>
+            <label class="field">年份范围<input type="text" id="impYear" placeholder="如：2021-2025"></label>
+            <label class="field">一句话概述<input type="text" id="impSummary" placeholder="该地区该项目考情一句话"></label>
+            <label class="field">考试科目<textarea id="impDui" rows="2"></textarea></label>
+            <label class="field">题型分布<textarea id="impDuan" rows="2"></textarea></label>
+            <label class="field">时长题量<input type="text" id="impShou" placeholder="如：90分钟/100题"></label>
+            <label class="field">招考时间规律<textarea id="impShijian" rows="2"></textarea></label>
+            <label class="field">学历/专业/户籍要求<textarea id="impYao" rows="2"></textarea></label>
+            <label class="field">竞争难度/进面参考<textarea id="impJingz" rows="2"></textarea></label>
+            <label class="field">待遇性价比<textarea id="impDaiyu" rows="2"></textarea></label>
+            <label class="field">真题说明<textarea id="impZhenti" rows="2"></textarea></label>
+            <label class="field">标签（逗号分隔）<input type="text" id="impTags" placeholder="如：教综,学科"></label>
+          </div>
+          <div style="margin-top:12px"><button class="btn primary" onclick="App.importOne()">保存这条考情</button>
+          <button class="btn ghost" onclick="App.previewImported()">预览待入库数据</button></div>
+        </div>
+
+        <div class="card">
+          <h3>② 批量表格导入 <small>支持 .csv / .tsv 文本表格</small></h3>
+          <div class="import-drop" id="dropZone">
+            把表格文件拖到这里，或 <b>点击选择文件</b><br>
+            <span style="font-size:12px">列名须与模板一致（地区,项目,县区/单位,标题,年份,一句话概述,考试科目,题型分布,时长题量,招考时间规律,学历专业户籍要求,竞争难度,待遇性价比,真题说明,标签,备注）</span>
+          </div>
+          <input type="file" id="fileInput" accept=".csv,.tsv,.txt" style="display:none">
+          <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+            <button class="btn" onclick="App.downloadTemplate()">📥 下载批量导入模板</button>
+            <button class="btn primary" onclick="App.importBatch()">解析并导入</button>
+            <button class="btn ghost" onclick="App.exportAll()">导出全部数据(JSON)</button>
+            <span class="hint">导入的数据会合并进本地会话，点“导出全部数据”可下载用于更新托管站</span>
+          </div>
+          <div id="batchPreview" style="margin-top:12px"></div>
+        </div>
+
+        <div class="card">
+          <h3>③ 如何让导入数据真正对所有人可见？</h3>
+          <ol style="line-height:1.9;margin:0;padding-left:20px">
+            <li>点上方 <b>“导出全部数据(JSON)”</b> 下载 <code>kaoqing_导出.json</code>（或直接编辑本机 <code>data/kaoqing.js</code>）。</li>
+            <li>把导出的 JSON 转换并替换/合并到托管仓库的 <code>data/kaoqing.js</code>（或用配套脚本生成）。</li>
+            <li>推送到 GitHub，GitHub Pages 自动发布 → 所有访问者即可看到新数据。</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ④ 设置 -->
+    <section class="view" id="view-settings">
+      <div class="card">
+        <h3>站点信息</h3>
+        <div class="set-row"><span>网站名称</span><input type="text" id="setName" style="width:240px"></div>
+        <div class="set-row"><span>标语</span><input type="text" id="setSlogan" style="width:320px"></div>
+        <div class="set-row"><span>页脚说明</span><input type="text" id="setFooter" style="width:380px"></div>
+      </div>
+      <div class="card">
+        <h3>外观</h3>
+        <div class="set-row"><span>深色模式</span><label class="switch"><input type="checkbox" id="setTheme"><span class="slider"></span></label></div>
+        <div class="set-row"><span>显示数据来源标签</span><label class="switch"><input type="checkbox" id="setSource"><span class="slider"></span></label></div>
+      </div>
+      <div class="card">
+        <h3>管理员</h3>
+        <div class="set-row"><span>修改管理员口令</span><span style="display:flex;gap:8px"><input type="password" id="setNewPwd" placeholder="新口令" style="width:180px"><button class="btn sm primary" onclick="App.changePwd()">保存</button></span></div>
+        <div class="set-row"><span>当前口令</span><span class="hint">默认 admin123（仅存本机，可改）</span></div>
+      </div>
+      <div class="card">
+        <h3>数据管理</h3>
+        <div class="set-row"><span>导出全部数据(JSON)</span><button class="btn sm" onclick="App.exportAll()">导出</button></div>
+        <div class="set-row"><span>导入数据文件(JSON，覆盖本地会话)</span><span style="display:flex;gap:8px"><button class="btn sm" onclick="document.getElementById('jsonImport').click()">选择文件</button><input type="file" id="jsonImport" accept=".json" style="display:none"></span></div>
+        <div class="set-row"><span>恢复默认数据(清空本次会话改动)</span><button class="btn sm danger" onclick="App.resetLocal()">恢复默认</button></div>
+      </div>
+      <div class="card">
+        <h3>关于</h3>
+        <p style="margin:0;color:var(--muted);line-height:1.8">
+          广东考情通 v<span id="ver">1.0.0</span> · 面向广东考公机构的考情速查工具。<br>
+          数据来源：机构真题库（本地文件夹自动索引）+ 公开招考公告信息，人工整理，先粗后细。<br>
+          部署：GitHub Pages 免费托管。更新方式：改 <code>data/</code> 下 JSON/JS 文件后重新推送即可，本站提供可视化导入/导出辅助。
+        </p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- 考情详情弹窗 -->
+<div class="modal-mask" id="detailMask" onclick="if(event.target===this)App.closeDetail()">
+  <div class="modal">
+    <div style="display:flex;align-items:center;margin-bottom:12px">
+      <h3 id="dTitle" style="margin:0;flex:1"></h3>
+      <button class="btn ghost sm" onclick="App.closeDetail()">✕ 关闭</button>
+    </div>
+    <div id="dBody"></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="data/settings.js"></script>
+<script src="data/projects.js"></script>
+<script src="data/kaoqing.js"></script>
+<script src="data/zhenti.js"></script>
+<script src="assets/maps/gd_map.js"></script>
+<script src="js/app.js"></script>
+<script src="js/map.js"></script>
+<script src="js/search.js"></script>
+<script src="js/import.js"></script>
+<script src="js/settings.js"></script>
+</body>
+</html>
