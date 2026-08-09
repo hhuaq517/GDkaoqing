@@ -34,7 +34,7 @@ window.Map = (function(){
     if(level==='province'){
       bc.innerHTML='<button class="btn ghost sm active">广东全省</button><span class="text-muted"> 点击任意地市可下钻到县区</span>';
     } else {
-      bc.innerHTML=`<button class="btn ghost sm" onclick="Map.backProv()">← 返回全省</button><span class="badge">${window.App.esc(activeCity||'')}</span><span class="text-muted">悬停县区查看该县考情</span>`;
+      bc.innerHTML=`<button class="btn ghost sm" onclick="Map.backProv()">← 返回全省</button><span class="badge">${window.App.esc(activeCity||'')}</span><span class="text-muted">单击县区锁定考情，再次单击进入该县搜索</span>`;
     }
   }
 
@@ -95,45 +95,60 @@ window.Map = (function(){
   function bindEvents(svg){
     const hc=document.getElementById('hoverCard');
     const isTouch = window.matchMedia && window.matchMedia('(hover: none), (pointer: coarse)').matches;
-    let tapState=null; // {node, at}
+    let tapState=null; // {node, at}，触屏：单击显示/双击下钻
+    let pinned=null;   // {node, html, dim}，鼠标：单击锁定考情，直到点击下一个才切换
+    const placeholder = ()=> level==='province'
+      ? '<b>👆 悬停或单击城市</b><br><br>这里会显示对应地市的考情速览；单击城市可锁定。'
+      : '<b>👆 悬停或单击县区</b><br><br>该县/区的考情会锁定在下方，点击其它县区可切换。';
+
+    function dimExcept(n){ svg.querySelectorAll('.gd-city,.gd-dist').forEach(o=>o.classList.add('dim')); n.classList.remove('dim'); }
+    function showDefault(){
+      hc.innerHTML=placeholder();
+      svg.querySelectorAll('.gd-city,.gd-dist').forEach(o=>o.classList.remove('dim'));
+      tapState=null;
+    }
+
+    function bindOne(n, overview, go){
+      // 鼠标：悬停仅无锁定时更新；离开无锁定时恢复占位；单击锁定，重复单击执行 go
+      n.addEventListener('mouseenter', ()=>{ if(!pinned){ hc.innerHTML=overview(); dimExcept(n);} });
+      n.addEventListener('mouseleave', ()=>{ if(!pinned) showDefault(); });
+      if(!isTouch){
+        n.addEventListener('click', ()=>{
+          if(pinned && pinned.node===n){       // 已锁定的元素再次点击 → 下钻/搜索
+            pinned=null; go(); return;
+          }
+          pinned={node:n, html:overview()};    // 单击：锁定考情，仅在点击下个县区时切换
+          hc.innerHTML=pinned.html;
+          dimExcept(n);
+        });
+      }
+      tapTo(n, overview, go);
+    }
+
     if(level==='province'){
       svg.querySelectorAll('.gd-city').forEach(n=>{
         const alias=(n.getAttribute('data-region')||'').replace(/地区$/,'');
-        n.addEventListener('mouseenter', ()=>{
-          hc.innerHTML=overviewText(alias);
-          dimExcept(n);
-        });
-        n.addEventListener('mouseleave', ()=>{ resetHover(); });
         const go=()=>{
+          pinned=null;
           if(window.GD_DISTRICT_SVG && window.GD_DISTRICT_SVG[alias]) drill(alias);
           else jumpToSearch(alias);
         };
-        n.addEventListener('click', go);
-        tapTo(n, ()=>overviewText(alias), go);
+        bindOne(n, ()=>overviewText(alias), go);
       });
     } else if(level==='city' && activeCity){
       svg.querySelectorAll('.gd-dist').forEach(n=>{
         const city=(n.getAttribute('data-city')||'').replace(/地区$/,'');
         const dist=n.getAttribute('data-name');
-        n.addEventListener('mouseenter', ()=>{
-          hc.innerHTML=overviewDistrict(city, dist);
-          dimExcept(n);
-        });
-        n.addEventListener('mouseleave', ()=>{ resetHover(); });
-        const go=()=>jumpToSearch(city, dist);
-        n.addEventListener('click', go);
-        tapTo(n, ()=>overviewDistrict(city, dist), go);
+        const go=()=>{ pinned=null; jumpToSearch(city, dist); };
+        bindOne(n, ()=>overviewDistrict(city, dist), go);
       });
     }
 
-    function dimExcept(n){ svg.querySelectorAll('.gd-city,.gd-dist').forEach(o=>o.classList.add('dim')); n.classList.remove('dim'); }
-    function resetHover(){
-      hc.innerHTML = level==='province' ? '<b>👆 把鼠标移到地图城市上</b><br><br>这里会显示对应地市的考情速览。' : '<b>👆 把鼠标移到县区上</b><br><br>这里会显示该县/区在本项目下的考情。';
-      svg.querySelectorAll('.gd-city,.gd-dist').forEach(o=>o.classList.remove('dim'));
-      tapState=null;
-    }
     function tapTo(n, show, go){
-      if(!isTouch) return;
+      if(!isTouch){
+        // 触屏复用 pinned：单击锁定，快速再点进入
+        return;
+      }
       n.addEventListener('click', (e)=>{
         const now=Date.now();
         if(tapState && tapState.node===n && now-tapState.at < 1400){
