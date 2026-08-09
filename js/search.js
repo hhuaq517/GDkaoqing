@@ -9,7 +9,24 @@ window.Search = (function(){
     const years=new Set(); window.App.allRecords().forEach(r=>{ (String(r.year||'').match(/20[0-2][0-9]/g)||[]).forEach(y=>years.add(y)); });
     fy.innerHTML='<option value="">全部年份</option>'+[...years].sort().map(y=>`<option>${y}</option>`).join('');
     fillImportControls();
+    // 真题索引懒加载：数据未就绪先占位，进入真题面板时补全
+    if(window.ZHENTI) ztInitRegions();
+    else ztInitPlaceholder();
+  }
+
+  function ztInitPlaceholder(){
+    const r=document.getElementById('ztRegion');
+    r.innerHTML='<option value="">（正在加载真题索引…）</option>';
+    const p=document.getElementById('ztProject');
+    p.innerHTML='<option value="">（加载中…）</option>';
+  }
+
+  function showZhentiQuick(){
+    const np=document.getElementById('zhentiPanel');
+    np.style.display='block';
+    document.getElementById('ztTree').innerHTML='<div class="card" style="color:var(--muted)">索引已就绪，选择地区/项目后点“查看”。</div>';
     ztInitRegions();
+    ztRun();
   }
 
   function fillImportControls(){
@@ -18,7 +35,11 @@ window.Search = (function(){
   }
 
   function hasYear(rec,y){
-    const m=(String(rec.year||'').match(/\d{4}/g)||[]);
+    const s=String(rec.year||'');
+    // 区间：2018~2025 / 2021-2024 / 2019—2026
+    const range=s.match(/(20[0-2][0-9])\s*[~\-–—]\s*(20[0-2][0-9])/);
+    if(range){ const a=+range[1], b=+range[2]; return +y >= Math.min(a,b) && +y <= Math.max(a,b); }
+    const m=s.match(/\d{4}/g)||[];
     if(m.length===0) return false;
     return m.some(v=>v===y);
   }
@@ -63,6 +84,7 @@ window.Search = (function(){
           <span class="city">${window.App.esc(rec.region||'')}</span>
           <span class="proj" style="background:${pj?pj.color:'var(--brand)'}">${window.App.esc(pj?pj.name:rec.project)}</span>
           <span class="years">${rec.year?window.App.esc(rec.year):''}${rec.area?' · '+window.App.esc(rec.area):''}</span>
+          ${(window.SETTINGS&&window.SETTINGS.showSourceTag===false)?'':'<span class="src-tag">'+((rec.source||String(rec.summary||'')).indexOf('真题库')>-1?'真题库':'整理')+'</span>'}
         </div>
         <div class="sum">${window.App.esc(rec.summary||'')}</div>
         <div class="meta"><span>📅 ${window.App.esc(dur)}</span><span>✍️ ${window.App.esc(dui)}</span></div>
@@ -102,5 +124,5 @@ window.Search = (function(){
       });
     });
   }
-  return { initFilters, run, reset, ztInitRegions, ztRun };
+  return { initFilters, run, reset, ztInitRegions, ztRun, showZhentiQuick };
 })();

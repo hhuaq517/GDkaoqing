@@ -13,7 +13,7 @@ window.Map = (function(){
     box.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{ current=b.dataset.proj; tabs(); paint(); }));
   }
 
-  function cityData(alias){ return window.App.allRecords().filter(r=>r.region===alias); }
+  function cityData(alias){ return window.App.allRecords().filter(r=>(r.region||'').replace(/地区$/,'')===alias); }
   function projectName(id){ const p=(window.PROJECTS||[]).find(x=>x.id===id); return p?p.name:id; }
 
   function paint(){
@@ -61,13 +61,21 @@ window.Map = (function(){
     const records=cityData(alias);
     let h=`<b>${window.App.esc(alias)}</b> · <span style="color:var(--brand)">${projectName(current)}</span>`;
     if(current==='province'){
-      const all=records;
-      if(!all.length){ return h+'<div style="margin-top:6px">暂无整理记录（可到考情导入补充）</div>'; }
-      const uniq=Array.from(new Set(all.map(r=>r.title)));
-      return h+uniq.map(t=>`<div style="margin-top:6px"><b>${window.App.esc(t)}</b></div>`).join('')+`<div style="margin-top:6px;color:var(--muted)">共 ${all.length} 条考情，点击城市下钻到县区</div>`;
+      // 省级统考：省考/选调/统考全省适用，展示省招信息 + 该市对此类项目的真题覆盖
+      const provRecs = window.App.allRecords().filter(r=> /^(广东)/.test(r.region||'') && r.project==='province');
+      provRecs.slice(0,3).forEach(r=>{
+        h+=`<div style="margin-top:6px"><b>${window.App.esc(r.title)}</b><div style="margin-top:2px;color:var(--text);font-size:12.5px">${window.App.esc((r.summary||'').slice(0,60))}…</div></div>`;
+      });
+      // 市级真题覆盖（county 与市级里 project 属于省级可叠加的）
+      const ztN = new Set();
+      window.App.allRecords().forEach(r=>{
+        if((r.region||'').replace(/地区$/,'')===alias && (r.project==='province'||r.project==='shiye')) ztN.add(r.title||'');
+      });
+      h+=`<div style="margin-top:8px;color:var(--muted)">${alias}本地真题/事业编资料 ${ztN.size} 项；点下方选项卡切换项目，悬停查看市级拆分</div>`;
+      return h;
     }
     const rs=records.filter(r=>r.project===current);
-    if(!rs.length){ return h+'<div style="margin-top:6px">该项目暂无独立整理记录</div>'; }
+    if(!rs.length){ return h+'<div style="margin-top:6px">该项目暂无独立整理记录，点击县区可查看县级真题覆盖</div>'; }
     rs.slice(0,4).forEach(r=>{ h+=`<div style="margin-top:8px;border-top:1px dashed var(--line);padding-top:6px"><b>${window.App.esc(r.title||'')}</b> <span class="badge">${window.App.esc(r.year||'')}</span><div style="margin-top:3px">${window.App.esc(r.summary||'')}</div></div>`; });
     return h;
   }
@@ -86,29 +94,22 @@ window.Map = (function(){
 
   function bindEvents(svg){
     const hc=document.getElementById('hoverCard');
+    const isTouch = window.matchMedia && window.matchMedia('(hover: none), (pointer: coarse)').matches;
+    let tapState=null; // {node, at}
     if(level==='province'){
       svg.querySelectorAll('.gd-city').forEach(n=>{
         const alias=(n.getAttribute('data-region')||'').replace(/地区$/,'');
         n.addEventListener('mouseenter', ()=>{
           hc.innerHTML=overviewText(alias);
-          svg.querySelectorAll('.gd-city').forEach(o=>o.classList.add('dim'));
-          n.classList.remove('dim');
+          dimExcept(n);
         });
-        n.addEventListener('mouseleave', ()=>{
-          hc.innerHTML='<b>👆 把鼠标移到地图城市上</b><br><br>这里会显示对应地市的考情速览。';
-          svg.querySelectorAll('.gd-city').forEach(o=>o.classList.remove('dim'));
-        });
-        n.addEventListener('click', ()=>{
-          const alias=(n.getAttribute('data-region')||'').replace(/地区$/,'');
-          if(window.GD_DISTRICT_SVG && window.GD_DISTRICT_SVG[alias]){
-            drill(alias);
-          } else {
-            window.location.hash='search';
-            const fRegion=document.getElementById('fRegion'); fRegion.value=alias+'地区';
-            document.getElementById('fProject').value=(current==='province'?'':current);
-            window.App.search();
-          }
-        });
+        n.addEventListener('mouseleave', ()=>{ resetHover(); });
+        const go=()=>{
+          if(window.GD_DISTRICT_SVG && window.GD_DISTRICT_SVG[alias]) drill(alias);
+          else jumpToSearch(alias);
+        };
+        n.addEventListener('click', go);
+        tapTo(n, ()=>overviewText(alias), go);
       });
     } else if(level==='city' && activeCity){
       svg.querySelectorAll('.gd-dist').forEach(n=>{
@@ -116,20 +117,33 @@ window.Map = (function(){
         const dist=n.getAttribute('data-name');
         n.addEventListener('mouseenter', ()=>{
           hc.innerHTML=overviewDistrict(city, dist);
-          svg.querySelectorAll('.gd-dist').forEach(o=>o.classList.add('dim'));
-          n.classList.remove('dim');
+          dimExcept(n);
         });
-        n.addEventListener('mouseleave', ()=>{
-          hc.innerHTML='<b>👆 把鼠标移到县区上</b><br><br>这里会显示该县/区在本项目下的考情。';
-          svg.querySelectorAll('.gd-dist').forEach(o=>o.classList.remove('dim'));
-        });
-        n.addEventListener('click', ()=>{
-          window.location.hash='search';
-          const fRegion=document.getElementById('fRegion'); fRegion.value=city+'地区';
-          const fArea=document.getElementById('fArea'); fArea.value=dist;
-          document.getElementById('fProject').value=(current==='province'?'':current);
-          window.App.search();
-        });
+        n.addEventListener('mouseleave', ()=>{ resetHover(); });
+        const go=()=>jumpToSearch(city, dist);
+        n.addEventListener('click', go);
+        tapTo(n, ()=>overviewDistrict(city, dist), go);
+      });
+    }
+
+    function dimExcept(n){ svg.querySelectorAll('.gd-city,.gd-dist').forEach(o=>o.classList.add('dim')); n.classList.remove('dim'); }
+    function resetHover(){
+      hc.innerHTML = level==='province' ? '<b>👆 把鼠标移到地图城市上</b><br><br>这里会显示对应地市的考情速览。' : '<b>👆 把鼠标移到县区上</b><br><br>这里会显示该县/区在本项目下的考情。';
+      svg.querySelectorAll('.gd-city,.gd-dist').forEach(o=>o.classList.remove('dim'));
+      tapState=null;
+    }
+    function tapTo(n, show, go){
+      if(!isTouch) return;
+      n.addEventListener('click', (e)=>{
+        const now=Date.now();
+        if(tapState && tapState.node===n && now-tapState.at < 1400){
+          e.preventDefault(); tapState=null; go();
+        } else {
+          tapState={node:n, at:now};
+          hc.innerHTML=show();
+          dimExcept(n);
+          setTimeout(()=>{ if(tapState && tapState.node===n) tapState=null; }, 1600);
+        }
       });
     }
   }
@@ -137,6 +151,16 @@ window.Map = (function(){
   function drill(alias){
     level='city'; activeCity=alias;
     paint();
+  }
+
+  /* 地图 → 搜索跳转：地区用裸名（option 值即裸名），归一化匹配 */
+  function jumpToSearch(city, dist){
+    window.location.hash='search';
+    const fRegion=document.getElementById('fRegion');
+    fRegion.value = window.App.norm(city);
+    const fArea=document.getElementById('fArea'); fArea.value = dist||'';
+    document.getElementById('fProject').value = '';
+    window.App.search();
   }
 
   function backProv(){ level='province'; activeCity=null; paint(); }

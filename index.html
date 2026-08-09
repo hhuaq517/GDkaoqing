@@ -42,12 +42,14 @@
   <!-- ======= 右侧展示区 ======= -->
   <main class="main" id="main">
     <div class="topbar">
+      <button class="menu-btn" id="menuBtn" title="导航" onclick="App.menuToggle()">☰</button>
       <h1 id="pageTitle">广东考情总览</h1>
       <span class="crumb" id="crumb"></span>
       <span class="spacer"></span>
       <span class="badge" id="dataBadge"></span>
       <button class="btn ghost sm" onclick="App.exportAll()" title="导出当前全部数据为JSON">导出数据</button>
     </div>
+    <div class="side-mask" id="sideMask" onclick="App.menuToggle()"></div>
 
     <!-- ① 广东考情总览 -->
     <section class="view active" id="view-overview">
@@ -124,10 +126,10 @@
     <!-- ③ 考情导入 -->
     <section class="view" id="view-import">
       <div class="card">
-        <h3>管理员验证 <small>导入/编辑/设置均需口令</small></h3>
+        <h3>本机编辑验证 <small>仅影响你当前浏览器，不会改动全站数据（全站数据需导出+推送）</small></h3>
         <div class="filters">
-          <label>管理员口令
-            <input type="password" id="adminPwd" placeholder="输入管理员口令">
+          <label>验证口令
+            <input type="password" id="adminPwd" placeholder="输入口令（默认 admin123）">
           </label>
           <button class="btn primary" onclick="App.login()">验 证</button>
           <span class="hint" id="loginMsg"></span>
@@ -198,9 +200,9 @@
         <div class="set-row"><span>显示数据来源标签</span><label class="switch"><input type="checkbox" id="setSource"><span class="slider"></span></label></div>
       </div>
       <div class="card">
-        <h3>管理员</h3>
-        <div class="set-row"><span>修改管理员口令</span><span style="display:flex;gap:8px"><input type="password" id="setNewPwd" placeholder="新口令" style="width:180px"><button class="btn sm primary" onclick="App.changePwd()">保存</button></span></div>
-        <div class="set-row"><span>当前口令</span><span class="hint">默认 admin123（仅存本机，可改）</span></div>
+        <h3>本机口令</h3>
+        <div class="set-row"><span>修改验证口令</span><span style="display:flex;gap:8px"><input type="password" id="setNewPwd" placeholder="新口令" style="width:180px"><button class="btn sm primary" onclick="App.changePwd()">保存</button></span></div>
+        <div class="set-row"><span>当前口令</span><span class="hint">默认 admin123（仅存在你本机浏览器，可改）</span></div>
       </div>
       <div class="card">
         <h3>数据管理</h3>
@@ -237,7 +239,6 @@
 <script src="data/districts.js"></script>
 <script src="data/county_kaoqing.js"></script>
 <script src="data/kaoqing.js"></script>
-<script src="data/zhenti.js"></script>
 <script src="assets/maps/gd_map.js"></script>
 <script src="js/app.js"></script>
 <script src="js/map.js"></script>

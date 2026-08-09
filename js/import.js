@@ -2,6 +2,8 @@
 window.Import = (function(){
   const A=window.App;
   let __batch=[];
+  let __batchErrors=[];
+  let __lastRows=[];
 
   function initArea(){ /* selects 由 Search.fillImportControls 填充 */ }
 
@@ -64,24 +66,28 @@ window.Import = (function(){
     return rows;
   }
 
-  function file2records(text){
+function file2records(text){
     const rows=parseCSV(text); if(!rows.length) return {err:'空文件'};
     const head=rows[0].map(s=>s.trim());
     const idx=k=>head.indexOf(k);
     const cols=['地区','项目','县区/单位','标题','年份','一句话概述','考试科目','题型分布','时长题量','招考时间规律','学历专业户籍要求','竞争难度','待遇性价比','真题说明','标签','备注'];
-    // 校验表头
+    // 校验表头（模糊匹配：找不到精确列就给出最接近的候选）
     const miss=cols.filter(c=>idx(c)<0);
-    if(miss.length) return {err:'缺少列：'+miss.join('、')};
-    const recs=[];
+    if(miss.length){
+      const tips=miss.map(c=>{ const near=(head||[]).filter(h=>h&&(h.includes(c)||c.includes(h))); return c+(near.length?'(近: '+near[0]+')':''); });
+      return {err:'缺少列：'+tips.join('、')};
+    }
+    const recs=[], errors=[];
     for(let i=1;i<rows.length;i++){
       const r=rows[i], v=k=>{ const j=idx(k); return (r[j]==null?'':r[j]).trim(); };
+      if(!v('地区') && !v('标题')){ errors.push(`第${i+1}行：地区与标题都为空，跳过`); continue; }
       const region=A.norm(v('地区'));
       const rawProj=v('项目');
       let proj=rawProj;
-      // 尝试标准化
       const found=(window.PROJECT_RULES||[]).find(rule=>rule.kws.some(k=>String(rawProj).includes(k)));
       if(found) proj=found.id;
       else if((window.PROJECTS||[]).find(p=>p.id===rawProj)) proj=rawProj;
+      else { errors.push(`第${i+1}行：未知项目“${rawProj}”，已跳过（可先用右侧下拉确认项目名）`); continue; }
       recs.push({
         region, project:proj, area:v('县区/单位'), title:v('标题')||proj,
         year:v('年份'), summary:v('一句话概述'),
@@ -90,17 +96,20 @@ window.Import = (function(){
         updatedAt:new Date().toISOString().slice(0,10)
       });
     }
-    return {recs};
+    return {recs, errors};
   }
 
-  function showPreview(recs){
-    __batch=recs;
+  function showPreview(recs, errors){
+    __batch=recs||[]; __batchErrors=errors||[];
     const box=document.getElementById('batchPreview');
-    if(!recs.length){ box.innerHTML=''; return; }
-    let h=`<div style="margin-bottom:6px">已解析 <b>${recs.length}</b> 行（点击“解析并导入”正式入库）：</div><table class="tbl"><tr><th>#</th><th>地区</th><th>项目</th><th>县区</th><th>标题</th><th>年份</th></tr>`;
-    recs.slice(0,12).forEach((r,i)=>{ h+=`<tr><td>${i+1}</td><td>${A.esc(r.region)}</td><td>${A.esc(r.project)}</td><td>${A.esc(r.area)}</td><td>${A.esc(r.title)}</td><td>${A.esc(r.year)}</td></tr>`; });
-    if(recs.length>12) h+=`<tr><td colspan="6">… 共 ${recs.length} 条</td></tr>`;
-    h+='</table>';
+    if(!recs.length && !(errors&&errors.length)){ box.innerHTML=''; return; }
+    let h='';
+    if(recs.length){ h+=`<div style="margin-bottom:6px">可入库 <b>${recs.length}</b> 条（点击“解析并导入”正式入库）：</div><table class="tbl"><tr><th>#</th><th>地区</th><th>项目</th><th>县区</th><th>标题</th><th>年份</th></tr>`;
+      recs.slice(0,12).forEach((r,i)=>{ h+=`<tr><td>${i+1}</td><td>${A.esc(r.region)}</td><td>${A.esc(r.project)}</td><td>${A.esc(r.area)}</td><td>${A.esc(r.title)}</td><td>${A.esc(r.year)}</td></tr>`; });
+      if(recs.length>12) h+=`<tr><td colspan="6">… 共 ${recs.length} 条</td></tr>`;
+      h+='</table>';
+    }
+    if(errors&&errors.length){ h+=`<div style="margin-top:8px;padding:8px 10px;background:rgba(225,82,79,.08);border-left:3px solid var(--accent);color:var(--accent);font-size:12px;line-height:1.7">已跳过 <b>${errors.length}</b> 行：<br>${errors.join('<br>')}</div>`; }
     box.innerHTML=h;
   }
 
@@ -119,8 +128,8 @@ window.Import = (function(){
         if(text.charCodeAt(0)===0xFEFF) text=text.slice(1);
         const res=file2records(text);
         if(res.err){ A.toast('解析失败：'+res.err); return; }
-        showPreview(res.recs);
-        A.toast(`解析成功 ${res.recs.length} 条，点“解析并导入”入库`);
+        showPreview(res.recs, res.errors);
+        A.toast(`解析完成：可入库 ${res.recs.length} 条${(res.errors||[]).length?`，跳过 ${res.errors.length} 行`:''}`);
       };
       rd.readAsText(f,'utf-8');
     }
@@ -128,12 +137,37 @@ window.Import = (function(){
 
   function batch(){
     if(!__batch.length){ A.toast('请先选择表格文件并成功解析'); return; }
-    const s=A.sessionRecords(); __batch.forEach(r=>s.push(r)); A.publishRecords(s);
-    A.toast(`✔ 已导入 ${__batch.length} 条考情（本会话数据，导出可带走）`);
-    __batch=[]; document.getElementById('batchPreview').innerHTML='';
+    const s=A.sessionRecords();
+    const added=[];
+    __batch.forEach(r=>{
+      const dup=s.some(x=>x.region===r.region && x.project===r.project && x.title===r.title && x.area===r.area);
+      if(dup) return;                       // 自动去重
+      s.push(r); added.push(r);
+    });
+    A.publishRecords(s);
+    const msg=`✔ 已导入 ${added.length} 条考情（本会话，导出可带走）`;
+    A.toast(msg);
+    __lastRows=added;
+    __batch=[]; __batchErrors=[];
+    const box=document.getElementById('batchPreview');
+    box.innerHTML=`<div style="padding:10px;background:rgba(26,158,111,.12);border-left:3px solid var(--brand-2);color:var(--brand-2);font-size:12.5px">
+      ${msg}<br><button class="btn sm" onclick="Import.undo()" style="margin-top:8px">↩ 撤销本次导入</button>
+      ${added.length?'':'<div style="margin-top:6px">全部与现有记录重复，未写入新数据。</div>'}</div>`;
     A.search();
   }
 
-  return { initArea, one, preview, downloadTemplate, batch, bindDrop };
+  /* 撤销最近一次批量导入（按引用匹配） */
+  function undo(){
+    const n=__lastRows.length;
+    if(!n){ A.toast('本次无可撤销记录'); return; }
+    const s=A.sessionRecords();
+    const orig=s.filter(x=>__lastRows.indexOf(x)===-1);
+    A.publishRecords(orig);
+    __lastRows=[];
+    A.toast(`已撤销 ${n} 条导入`);
+    A.search();
+  }
+
+  return { initArea, one, preview, downloadTemplate, batch, undo, bindDrop };
 })();
 document.addEventListener('DOMContentLoaded', ()=>{ window.Import.bindDrop(); });

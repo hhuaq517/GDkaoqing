@@ -1,10 +1,10 @@
 /* 县区级考情(由真题库提取, 权威=真题文件真实存在) 由工具生成 */
 window.COUNTY_KAOQING = [
  {
-  "region": "东莞地区",
+  "region": "东莞",
   "area": "东莞",
   "project": "shiye",
-  "title": "东莞东莞·事业单位",
+  "title": "东莞·事业单位",
   "year": "2018~2025",
   "summary": "真题库收录：2018-2025年东莞事业单位历年试题。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -18,10 +18,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "东莞地区",
+  "region": "东莞",
   "area": "东莞",
   "project": "yiliao",
-  "title": "东莞东莞·医疗卫生",
+  "title": "东莞·医疗卫生",
   "year": "待确认",
   "summary": "真题库收录：东莞市卫健医疗医基22-24年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -35,10 +35,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "东莞地区",
+  "region": "东莞",
   "area": "东莞",
   "project": "jiao",
-  "title": "东莞东莞·教师招聘",
+  "title": "东莞·教师招聘",
   "year": "2019~2024",
   "summary": "真题库收录：2019-2024年东莞教师招聘笔试真题。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -52,10 +52,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "东莞地区",
+  "region": "东莞",
   "area": "东莞",
   "project": "jiao",
-  "title": "东莞东莞·教师招聘",
+  "title": "东莞·教师招聘",
   "year": "待确认",
   "summary": "真题库收录：广东东莞技师教师笔试题目21-23。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -69,10 +69,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "东莞地区",
+  "region": "东莞",
   "area": "东莞",
   "project": "fuzhi",
-  "title": "东莞东莞·辅警/司法",
+  "title": "东莞·辅警/司法",
   "year": "待确认",
   "summary": "真题库收录：东莞事业单位编外笔试题20-24年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -86,10 +86,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "东莞地区",
+  "region": "东莞",
   "area": "东莞",
   "project": "fuzhi",
-  "title": "东莞东莞·辅警/司法",
+  "title": "东莞·辅警/司法",
   "year": "2021~2023",
   "summary": "真题库收录：东莞莞城辅警招聘笔试题2021-2023年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -103,10 +103,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "东莞地区",
+  "region": "东莞",
   "area": "东莞",
   "project": "fuzhi",
-  "title": "东莞东莞·辅警/司法",
+  "title": "东莞·辅警/司法",
   "year": "待确认",
   "summary": "真题库收录：东莞辅警招聘笔试题21-24年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -120,10 +120,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "东莞地区",
+  "region": "东莞",
   "area": "东莞",
   "project": "fuzhi",
-  "title": "东莞东莞·辅警/司法",
+  "title": "东莞·辅警/司法",
   "year": "待确认",
   "summary": "真题库收录：广东东莞书记员21-24年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -137,10 +137,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "shiye",
-  "title": "中山中山·事业单位",
+  "title": "中山·事业单位",
   "year": "待确认",
   "summary": "真题库收录：中山事业单位笔试题回忆版20-25年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -154,10 +154,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "bianwai",
-  "title": "中山中山·编外",
+  "title": "中山·编外",
   "year": "待确认",
   "summary": "真题库收录：中山事业单位雇员招聘笔试真题20-23年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -171,10 +171,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "shequ",
-  "title": "中山中山·社区",
+  "title": "中山·社区",
   "year": "待确认",
   "summary": "真题库收录：中山社区书记转编笔试真题21-23年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -188,10 +188,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "yiliao",
-  "title": "中山中山·医疗卫生",
+  "title": "中山·医疗卫生",
   "year": "待确认",
   "summary": "真题库收录：中山医疗公卫笔试题21-23年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -205,10 +205,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "yiliao",
-  "title": "中山中山·医疗卫生",
+  "title": "中山·医疗卫生",
   "year": "待确认",
   "summary": "真题库收录：中山医疗招聘笔试真题医学类医基20-24年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -222,10 +222,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "yiliao",
-  "title": "中山中山·医疗卫生",
+  "title": "中山·医疗卫生",
   "year": "待确认",
   "summary": "真题库收录：中山医疗招聘笔试真题护理类20-23年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -239,10 +239,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "yiliao",
-  "title": "中山中山·医疗卫生",
+  "title": "中山·医疗卫生",
   "year": "待确认",
   "summary": "真题库收录：中山医疗招聘笔试真题检验类20-23年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -256,10 +256,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "yiliao",
-  "title": "中山中山·医疗卫生",
+  "title": "中山·医疗卫生",
   "year": "待确认",
   "summary": "真题库收录：中山医疗招聘笔试真题药学类20-23年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -273,10 +273,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "yiliao",
-  "title": "中山中山·医疗卫生",
+  "title": "中山·医疗卫生",
   "year": "待确认",
   "summary": "真题库收录：中山医疗笔试题目医技21-23年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -290,10 +290,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "yiliao",
-  "title": "中山中山·医疗卫生",
+  "title": "中山·医疗卫生",
   "year": "待确认",
   "summary": "真题库收录：中山医疗笔试题目口腔21-23年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -307,10 +307,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "yiliao",
-  "title": "中山中山·医疗卫生",
+  "title": "中山·医疗卫生",
   "year": "待确认",
   "summary": "真题库收录：中山卫健临床21-23。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -324,10 +324,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "jiao",
-  "title": "中山中山·教师招聘",
+  "title": "中山·教师招聘",
   "year": "待确认",
   "summary": "真题库收录：中山教师招聘笔试-教综模拟三套。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -341,10 +341,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "jiao",
-  "title": "中山中山·教师招聘",
+  "title": "中山·教师招聘",
   "year": "2018~2026",
   "summary": "真题库收录：中山教师招聘笔试真题2018-2026年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -358,10 +358,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "jiao",
-  "title": "中山中山·教师招聘",
+  "title": "中山·教师招聘",
   "year": "待确认",
   "summary": "真题库收录：中山教师英语21-23。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -375,10 +375,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "jiao",
-  "title": "中山中山·教师招聘",
+  "title": "中山·教师招聘",
   "year": "待确认",
   "summary": "真题库收录：中山语文21-24。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -392,10 +392,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "jiao",
-  "title": "中山中山·教师招聘",
+  "title": "中山·教师招聘",
   "year": "待确认",
   "summary": "真题库收录：广东中山特殊教育21-24。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -409,10 +409,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "jiao",
-  "title": "中山中山·教师招聘",
+  "title": "中山·教师招聘",
   "year": "待确认",
   "summary": "真题库收录：广东中山翠亨新区幼儿22-24。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -426,10 +426,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "fuzhi",
-  "title": "中山中山·辅警/司法",
+  "title": "中山·辅警/司法",
   "year": "待确认",
   "summary": "真题库收录：中山书记员招聘笔试题模拟冲刺卷三套。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -443,10 +443,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "fuzhi",
-  "title": "中山中山·辅警/司法",
+  "title": "中山·辅警/司法",
   "year": "待确认",
   "summary": "真题库收录：中山检察院司法辅助人员笔试真题20-23年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -460,10 +460,10 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "中山地区",
+  "region": "中山",
   "area": "中山",
   "project": "fuzhi",
-  "title": "中山中山·辅警/司法",
+  "title": "中山·辅警/司法",
   "year": "待确认",
   "summary": "真题库收录：中山辅警招聘笔试题-21-23年。县区级一线考情，信源=机构真题文件夹（文件真实存在）。",
   "tags": [
@@ -477,7 +477,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "云浮地区",
+  "region": "云浮",
   "area": "云安",
   "project": "shiye",
   "title": "云浮云安·事业单位",
@@ -494,7 +494,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "云浮地区",
+  "region": "云浮",
   "area": "新兴",
   "project": "shiye",
   "title": "云浮新兴·事业单位",
@@ -511,7 +511,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "云浮地区",
+  "region": "云浮",
   "area": "罗定",
   "project": "shiye",
   "title": "云浮罗定·事业单位",
@@ -528,7 +528,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "云浮地区",
+  "region": "云浮",
   "area": "郁南",
   "project": "shiye",
   "title": "云浮郁南·事业单位",
@@ -545,7 +545,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "云浮地区",
+  "region": "云浮",
   "area": "罗定",
   "project": "yiliao",
   "title": "云浮罗定·医疗卫生",
@@ -562,7 +562,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "云浮地区",
+  "region": "云浮",
   "area": "郁南",
   "project": "jiao",
   "title": "云浮郁南·教师招聘",
@@ -579,7 +579,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "云浮地区",
+  "region": "云浮",
   "area": "云城",
   "project": "jiao",
   "title": "云浮云城·教师招聘",
@@ -596,7 +596,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "云浮地区",
+  "region": "云浮",
   "area": "云安",
   "project": "jiao",
   "title": "云浮云安·教师招聘",
@@ -613,7 +613,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "云浮地区",
+  "region": "云浮",
   "area": "新兴",
   "project": "jiao",
   "title": "云浮新兴·教师招聘",
@@ -630,7 +630,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "云浮地区",
+  "region": "云浮",
   "area": "罗定",
   "project": "jiao",
   "title": "云浮罗定·教师招聘",
@@ -647,7 +647,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "三水",
   "project": "shiye",
   "title": "佛山三水·事业单位",
@@ -664,7 +664,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "三水",
   "project": "yiliao",
   "title": "佛山三水·医疗卫生",
@@ -681,7 +681,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "三水",
   "project": "yiliao",
   "title": "佛山三水·医疗卫生",
@@ -698,7 +698,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "三水",
   "project": "yiliao",
   "title": "佛山三水·医疗卫生",
@@ -715,7 +715,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "三水",
   "project": "yiliao",
   "title": "佛山三水·医疗卫生",
@@ -732,7 +732,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "顺德",
   "project": "yiliao",
   "title": "佛山顺德·医疗卫生",
@@ -749,7 +749,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "顺德",
   "project": "jiao",
   "title": "佛山顺德·教师招聘",
@@ -766,7 +766,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "三水",
   "project": "jiao",
   "title": "佛山三水·教师招聘",
@@ -783,7 +783,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "南海",
   "project": "jiao",
   "title": "佛山南海·教师招聘",
@@ -800,7 +800,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "南海",
   "project": "jiao",
   "title": "佛山南海·教师招聘",
@@ -817,7 +817,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "禅城",
   "project": "jiao",
   "title": "佛山禅城·教师招聘",
@@ -834,7 +834,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "禅城",
   "project": "jiao",
   "title": "佛山禅城·教师招聘",
@@ -851,7 +851,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "高明",
   "project": "jiao",
   "title": "佛山高明·教师招聘",
@@ -868,7 +868,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "高明",
   "project": "jiao",
   "title": "佛山高明·教师招聘",
@@ -885,7 +885,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "三水",
   "project": "fuzhi",
   "title": "佛山三水·辅警/司法",
@@ -902,7 +902,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "高明",
   "project": "fuzhi",
   "title": "佛山高明·辅警/司法",
@@ -919,7 +919,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "南海",
   "project": "bianwai",
   "title": "佛山南海·编外",
@@ -936,7 +936,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "顺德",
   "project": "fuzhi",
   "title": "佛山顺德·辅警/司法",
@@ -953,7 +953,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "佛山地区",
+  "region": "佛山",
   "area": "禅城",
   "project": "fuzhi",
   "title": "佛山禅城·辅警/司法",
@@ -970,7 +970,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "海珠",
   "project": "shiye",
   "title": "广州海珠·事业单位",
@@ -987,7 +987,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "从化",
   "project": "shiye",
   "title": "广州从化·事业单位",
@@ -1004,7 +1004,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "南沙",
   "project": "shiye",
   "title": "广州南沙·事业单位",
@@ -1021,7 +1021,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "番禺",
   "project": "shiye",
   "title": "广州番禺·事业单位",
@@ -1038,7 +1038,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "荔湾",
   "project": "shiye",
   "title": "广州荔湾·事业单位",
@@ -1055,7 +1055,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "越秀",
   "project": "shiye",
   "title": "广州越秀·事业单位",
@@ -1072,7 +1072,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "黄埔",
   "project": "shiye",
   "title": "广州黄埔·事业单位",
@@ -1089,7 +1089,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "增城",
   "project": "shiye",
   "title": "广州增城·事业单位",
@@ -1106,7 +1106,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "天河",
   "project": "shiye",
   "title": "广州天河·事业单位",
@@ -1123,7 +1123,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "从化",
   "project": "shiye",
   "title": "广州从化·事业单位",
@@ -1140,7 +1140,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "南沙",
   "project": "shiye",
   "title": "广州南沙·事业单位",
@@ -1157,7 +1157,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "白云",
   "project": "shiye",
   "title": "广州白云·事业单位",
@@ -1174,7 +1174,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "白云",
   "project": "shiye",
   "title": "广州白云·事业单位",
@@ -1191,7 +1191,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "天河",
   "project": "shiye",
   "title": "广州天河·事业单位",
@@ -1208,7 +1208,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "花都",
   "project": "shiye",
   "title": "广州花都·事业单位",
@@ -1225,7 +1225,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "黄埔",
   "project": "shiye",
   "title": "广州黄埔·事业单位",
@@ -1242,7 +1242,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "从化",
   "project": "yiliao",
   "title": "广州从化·医疗卫生",
@@ -1259,7 +1259,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "增城",
   "project": "yiliao",
   "title": "广州增城·医疗卫生",
@@ -1276,7 +1276,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "天河",
   "project": "yiliao",
   "title": "广州天河·医疗卫生",
@@ -1293,7 +1293,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "南沙",
   "project": "yiliao",
   "title": "广州南沙·医疗卫生",
@@ -1310,7 +1310,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "海珠",
   "project": "yiliao",
   "title": "广州海珠·医疗卫生",
@@ -1327,7 +1327,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "白云",
   "project": "yiliao",
   "title": "广州白云·医疗卫生",
@@ -1344,7 +1344,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "越秀",
   "project": "yiliao",
   "title": "广州越秀·医疗卫生",
@@ -1361,7 +1361,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "黄埔",
   "project": "yiliao",
   "title": "广州黄埔·医疗卫生",
@@ -1378,7 +1378,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "番禺",
   "project": "yiliao",
   "title": "广州番禺·医疗卫生",
@@ -1395,7 +1395,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "白云",
   "project": "yiliao",
   "title": "广州白云·医疗卫生",
@@ -1412,7 +1412,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "荔湾",
   "project": "yiliao",
   "title": "广州荔湾·医疗卫生",
@@ -1429,7 +1429,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "越秀",
   "project": "yiliao",
   "title": "广州越秀·医疗卫生",
@@ -1446,7 +1446,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "黄埔",
   "project": "yiliao",
   "title": "广州黄埔·医疗卫生",
@@ -1463,7 +1463,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "番禺",
   "project": "jiao",
   "title": "广州番禺·教师招聘",
@@ -1480,7 +1480,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "南沙",
   "project": "jiao",
   "title": "广州南沙·教师招聘",
@@ -1497,7 +1497,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "白云",
   "project": "jiao",
   "title": "广州白云·教师招聘",
@@ -1514,7 +1514,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "黄埔",
   "project": "jiao",
   "title": "广州黄埔·教师招聘",
@@ -1531,7 +1531,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "从化",
   "project": "jiao",
   "title": "广州从化·教师招聘",
@@ -1548,7 +1548,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "增城",
   "project": "jiao",
   "title": "广州增城·教师招聘",
@@ -1565,7 +1565,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "天河",
   "project": "jiao",
   "title": "广州天河·教师招聘",
@@ -1582,7 +1582,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "南沙",
   "project": "jiao",
   "title": "广州南沙·教师招聘",
@@ -1599,7 +1599,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "海珠",
   "project": "jiao",
   "title": "广州海珠·教师招聘",
@@ -1616,7 +1616,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "花都",
   "project": "jiao",
   "title": "广州花都·教师招聘",
@@ -1633,7 +1633,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "越秀",
   "project": "jiao",
   "title": "广州越秀·教师招聘",
@@ -1650,7 +1650,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "海珠",
   "project": "jiao",
   "title": "广州海珠·教师招聘",
@@ -1667,7 +1667,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "花都",
   "project": "jiao",
   "title": "广州花都·教师招聘",
@@ -1684,7 +1684,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "荔湾",
   "project": "jiao",
   "title": "广州荔湾·教师招聘",
@@ -1701,7 +1701,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "越秀",
   "project": "jiao",
   "title": "广州越秀·教师招聘",
@@ -1718,7 +1718,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "黄埔",
   "project": "jiao",
   "title": "广州黄埔·教师招聘",
@@ -1735,7 +1735,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "黄埔",
   "project": "shequ",
   "title": "广州黄埔·社区",
@@ -1752,7 +1752,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "天河",
   "project": "shequ",
   "title": "广州天河·社区",
@@ -1769,7 +1769,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "天河",
   "project": "shequ",
   "title": "广州天河·社区",
@@ -1786,7 +1786,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "天河",
   "project": "shequ",
   "title": "广州天河·社区",
@@ -1803,7 +1803,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "增城",
   "project": "shequ",
   "title": "广州增城·社区",
@@ -1820,7 +1820,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "海珠",
   "project": "shequ",
   "title": "广州海珠·社区",
@@ -1837,7 +1837,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "白云",
   "project": "shequ",
   "title": "广州白云·社区",
@@ -1854,7 +1854,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "荔湾",
   "project": "shequ",
   "title": "广州荔湾·社区",
@@ -1871,7 +1871,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "越秀",
   "project": "shequ",
   "title": "广州越秀·社区",
@@ -1888,7 +1888,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "黄埔",
   "project": "shequ",
   "title": "广州黄埔·社区",
@@ -1905,7 +1905,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "增城",
   "project": "shequ",
   "title": "广州增城·社区",
@@ -1922,7 +1922,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "增城",
   "project": "shequ",
   "title": "广州增城·社区",
@@ -1939,7 +1939,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "天河",
   "project": "shequ",
   "title": "广州天河·社区",
@@ -1956,7 +1956,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "从化",
   "project": "shequ",
   "title": "广州从化·社区",
@@ -1973,7 +1973,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "南沙",
   "project": "shequ",
   "title": "广州南沙·社区",
@@ -1990,7 +1990,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "南沙",
   "project": "shequ",
   "title": "广州南沙·社区",
@@ -2007,7 +2007,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "白云",
   "project": "shequ",
   "title": "广州白云·社区",
@@ -2024,7 +2024,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "花都",
   "project": "shequ",
   "title": "广州花都·社区",
@@ -2041,7 +2041,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "越秀",
   "project": "shequ",
   "title": "广州越秀·社区",
@@ -2058,7 +2058,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "天河",
   "project": "shequ",
   "title": "广州天河·社区",
@@ -2075,7 +2075,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "海珠",
   "project": "shequ",
   "title": "广州海珠·社区",
@@ -2092,7 +2092,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "番禺",
   "project": "shequ",
   "title": "广州番禺·社区",
@@ -2109,7 +2109,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "荔湾",
   "project": "shequ",
   "title": "广州荔湾·社区",
@@ -2126,7 +2126,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "黄埔",
   "project": "shequ",
   "title": "广州黄埔·社区",
@@ -2143,7 +2143,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "南沙",
   "project": "bianwai",
   "title": "广州南沙·编外",
@@ -2160,7 +2160,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "南沙",
   "project": "fuzhi",
   "title": "广州南沙·辅警/司法",
@@ -2177,7 +2177,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "增城",
   "project": "fuzhi",
   "title": "广州增城·辅警/司法",
@@ -2194,7 +2194,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "天河",
   "project": "fuzhi",
   "title": "广州天河·辅警/司法",
@@ -2211,7 +2211,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "白云",
   "project": "fuzhi",
   "title": "广州白云·辅警/司法",
@@ -2228,7 +2228,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "海珠",
   "project": "fuzhi",
   "title": "广州海珠·辅警/司法",
@@ -2245,7 +2245,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "海珠",
   "project": "bianwai",
   "title": "广州海珠·编外",
@@ -2262,7 +2262,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "白云",
   "project": "fuzhi",
   "title": "广州白云·辅警/司法",
@@ -2279,7 +2279,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "荔湾",
   "project": "fuzhi",
   "title": "广州荔湾·辅警/司法",
@@ -2296,7 +2296,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "越秀",
   "project": "bianwai",
   "title": "广州越秀·编外",
@@ -2313,7 +2313,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "黄埔",
   "project": "bianwai",
   "title": "广州黄埔·编外",
@@ -2330,7 +2330,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "海珠",
   "project": "fuzhi",
   "title": "广州海珠·辅警/司法",
@@ -2347,7 +2347,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "白云",
   "project": "bianwai",
   "title": "广州白云·编外",
@@ -2364,7 +2364,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "广州地区",
+  "region": "广州",
   "area": "黄埔",
   "project": "fuzhi",
   "title": "广州黄埔·辅警/司法",
@@ -2381,7 +2381,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "龙门",
   "project": "shiye",
   "title": "惠州龙门·事业单位",
@@ -2398,7 +2398,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "博罗",
   "project": "shiye",
   "title": "惠州博罗·事业单位",
@@ -2415,7 +2415,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "博罗",
   "project": "bianwai",
   "title": "惠州博罗·编外",
@@ -2432,7 +2432,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "惠阳",
   "project": "shiye",
   "title": "惠州惠阳·事业单位",
@@ -2449,7 +2449,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "惠东",
   "project": "shiye",
   "title": "惠州惠东·事业单位",
@@ -2466,7 +2466,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "博罗",
   "project": "yiliao",
   "title": "惠州博罗·医疗卫生",
@@ -2483,7 +2483,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "博罗",
   "project": "yiliao",
   "title": "惠州博罗·医疗卫生",
@@ -2500,7 +2500,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "惠东",
   "project": "yiliao",
   "title": "惠州惠东·医疗卫生",
@@ -2517,7 +2517,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "惠城",
   "project": "yiliao",
   "title": "惠州惠城·医疗卫生",
@@ -2534,7 +2534,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "惠阳",
   "project": "yiliao",
   "title": "惠州惠阳·医疗卫生",
@@ -2551,7 +2551,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "龙门",
   "project": "yiliao",
   "title": "惠州龙门·医疗卫生",
@@ -2568,7 +2568,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "博罗",
   "project": "jiao",
   "title": "惠州博罗·教师招聘",
@@ -2585,7 +2585,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "博罗",
   "project": "jiao",
   "title": "惠州博罗·教师招聘",
@@ -2602,7 +2602,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "惠东",
   "project": "jiao",
   "title": "惠州惠东·教师招聘",
@@ -2619,7 +2619,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "博罗",
   "project": "jiao",
   "title": "惠州博罗·教师招聘",
@@ -2636,7 +2636,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "惠东",
   "project": "jiao",
   "title": "惠州惠东·教师招聘",
@@ -2653,7 +2653,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "惠城",
   "project": "jiao",
   "title": "惠州惠城·教师招聘",
@@ -2670,7 +2670,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "惠阳",
   "project": "jiao",
   "title": "惠州惠阳·教师招聘",
@@ -2687,7 +2687,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "龙门",
   "project": "jiao",
   "title": "惠州龙门·教师招聘",
@@ -2704,7 +2704,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "博罗",
   "project": "fuzhi",
   "title": "惠州博罗·辅警/司法",
@@ -2721,7 +2721,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "惠城",
   "project": "shequ",
   "title": "惠州惠城·社区",
@@ -2738,7 +2738,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "惠城",
   "project": "shequ",
   "title": "惠州惠城·社区",
@@ -2755,7 +2755,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "惠州地区",
+  "region": "惠州",
   "area": "惠阳",
   "project": "fuzhi",
   "title": "惠州惠阳·辅警/司法",
@@ -2772,7 +2772,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "揭西",
   "project": "shiye",
   "title": "揭阳揭西·事业单位",
@@ -2789,7 +2789,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "惠来",
   "project": "shiye",
   "title": "揭阳惠来·事业单位",
@@ -2806,7 +2806,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "揭东",
   "project": "shiye",
   "title": "揭阳揭东·事业单位",
@@ -2823,7 +2823,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "普宁",
   "project": "shiye",
   "title": "揭阳普宁·事业单位",
@@ -2840,7 +2840,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "揭东",
   "project": "yiliao",
   "title": "揭阳揭东·医疗卫生",
@@ -2857,7 +2857,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "惠来",
   "project": "yiliao",
   "title": "揭阳惠来·医疗卫生",
@@ -2874,7 +2874,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "揭西",
   "project": "yiliao",
   "title": "揭阳揭西·医疗卫生",
@@ -2891,7 +2891,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "普宁",
   "project": "yiliao",
   "title": "揭阳普宁·医疗卫生",
@@ -2908,7 +2908,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "普宁",
   "project": "yiliao",
   "title": "揭阳普宁·医疗卫生",
@@ -2925,7 +2925,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "揭西",
   "project": "jiao",
   "title": "揭阳揭西·教师招聘",
@@ -2942,7 +2942,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "惠来",
   "project": "jiao",
   "title": "揭阳惠来·教师招聘",
@@ -2959,7 +2959,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "揭东",
   "project": "jiao",
   "title": "揭阳揭东·教师招聘",
@@ -2976,7 +2976,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "揭西",
   "project": "jiao",
   "title": "揭阳揭西·教师招聘",
@@ -2993,7 +2993,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "普宁",
   "project": "jiao",
   "title": "揭阳普宁·教师招聘",
@@ -3010,7 +3010,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "榕城",
   "project": "jiao",
   "title": "揭阳榕城·教师招聘",
@@ -3027,7 +3027,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "惠来",
   "project": "shequ",
   "title": "揭阳惠来·社区",
@@ -3044,7 +3044,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "揭西",
   "project": "shequ",
   "title": "揭阳揭西·社区",
@@ -3061,7 +3061,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "普宁",
   "project": "shequ",
   "title": "揭阳普宁·社区",
@@ -3078,7 +3078,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "揭阳地区",
+  "region": "揭阳",
   "area": "榕城",
   "project": "shequ",
   "title": "揭阳榕城·社区",
@@ -3095,7 +3095,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "梅州地区",
+  "region": "梅州",
   "area": "五华",
   "project": "jiao",
   "title": "梅州五华·教师招聘",
@@ -3112,7 +3112,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "梅州地区",
+  "region": "梅州",
   "area": "平远",
   "project": "jiao",
   "title": "梅州平远·教师招聘",
@@ -3129,7 +3129,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕头地区",
+  "region": "汕头",
   "area": "潮阳",
   "project": "yiliao",
   "title": "汕头潮阳·医疗卫生",
@@ -3146,7 +3146,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕头地区",
+  "region": "汕头",
   "area": "潮阳",
   "project": "yiliao",
   "title": "汕头潮阳·医疗卫生",
@@ -3163,7 +3163,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕头地区",
+  "region": "汕头",
   "area": "龙湖",
   "project": "yiliao",
   "title": "汕头龙湖·医疗卫生",
@@ -3180,7 +3180,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕头地区",
+  "region": "汕头",
   "area": "潮南",
   "project": "jiao",
   "title": "汕头潮南·教师招聘",
@@ -3197,7 +3197,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕头地区",
+  "region": "汕头",
   "area": "潮阳",
   "project": "jiao",
   "title": "汕头潮阳·教师招聘",
@@ -3214,7 +3214,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕头地区",
+  "region": "汕头",
   "area": "澄海",
   "project": "jiao",
   "title": "汕头澄海·教师招聘",
@@ -3231,7 +3231,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕头地区",
+  "region": "汕头",
   "area": "濠江",
   "project": "jiao",
   "title": "汕头濠江·教师招聘",
@@ -3248,7 +3248,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕头地区",
+  "region": "汕头",
   "area": "金平",
   "project": "jiao",
   "title": "汕头金平·教师招聘",
@@ -3265,7 +3265,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕头地区",
+  "region": "汕头",
   "area": "龙湖",
   "project": "jiao",
   "title": "汕头龙湖·教师招聘",
@@ -3282,7 +3282,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕头地区",
+  "region": "汕头",
   "area": "金平",
   "project": "shequ",
   "title": "汕头金平·社区",
@@ -3299,7 +3299,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕尾地区",
+  "region": "汕尾",
   "area": "陆丰",
   "project": "jiao",
   "title": "汕尾陆丰·教师招聘",
@@ -3316,7 +3316,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕尾地区",
+  "region": "汕尾",
   "area": "城",
   "project": "jiao",
   "title": "汕尾城·教师招聘",
@@ -3333,7 +3333,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕尾地区",
+  "region": "汕尾",
   "area": "海丰",
   "project": "jiao",
   "title": "汕尾海丰·教师招聘",
@@ -3350,7 +3350,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕尾地区",
+  "region": "汕尾",
   "area": "陆丰",
   "project": "jiao",
   "title": "汕尾陆丰·教师招聘",
@@ -3367,7 +3367,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕尾地区",
+  "region": "汕尾",
   "area": "陆河",
   "project": "jiao",
   "title": "汕尾陆河·教师招聘",
@@ -3384,7 +3384,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕尾地区",
+  "region": "汕尾",
   "area": "海丰",
   "project": "fuzhi",
   "title": "汕尾海丰·辅警/司法",
@@ -3401,7 +3401,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "汕尾地区",
+  "region": "汕尾",
   "area": "陆丰",
   "project": "fuzhi",
   "title": "汕尾陆丰·辅警/司法",
@@ -3418,7 +3418,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "开平",
   "project": "shiye",
   "title": "江门开平·事业单位",
@@ -3435,7 +3435,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "台山",
   "project": "yiliao",
   "title": "江门台山·医疗卫生",
@@ -3452,7 +3452,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "开平",
   "project": "yiliao",
   "title": "江门开平·医疗卫生",
@@ -3469,7 +3469,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "开平",
   "project": "yiliao",
   "title": "江门开平·医疗卫生",
@@ -3486,7 +3486,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "开平",
   "project": "yiliao",
   "title": "江门开平·医疗卫生",
@@ -3503,7 +3503,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "新会",
   "project": "yiliao",
   "title": "江门新会·医疗卫生",
@@ -3520,7 +3520,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "鹤山",
   "project": "yiliao",
   "title": "江门鹤山·医疗卫生",
@@ -3537,7 +3537,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "蓬江",
   "project": "jiao",
   "title": "江门蓬江·教师招聘",
@@ -3554,7 +3554,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "台山",
   "project": "jiao",
   "title": "江门台山·教师招聘",
@@ -3571,7 +3571,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "开平",
   "project": "jiao",
   "title": "江门开平·教师招聘",
@@ -3588,7 +3588,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "开平",
   "project": "jiao",
   "title": "江门开平·教师招聘",
@@ -3605,7 +3605,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "恩平",
   "project": "jiao",
   "title": "江门恩平·教师招聘",
@@ -3622,7 +3622,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "新会",
   "project": "jiao",
   "title": "江门新会·教师招聘",
@@ -3639,7 +3639,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "江海",
   "project": "jiao",
   "title": "江门江海·教师招聘",
@@ -3656,7 +3656,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "鹤山",
   "project": "jiao",
   "title": "江门鹤山·教师招聘",
@@ -3673,7 +3673,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "鹤山",
   "project": "jiao",
   "title": "江门鹤山·教师招聘",
@@ -3690,7 +3690,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "台山",
   "project": "fuzhi",
   "title": "江门台山·辅警/司法",
@@ -3707,7 +3707,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "蓬江",
   "project": "shequ",
   "title": "江门蓬江·社区",
@@ -3724,7 +3724,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "开平",
   "project": "fuzhi",
   "title": "江门开平·辅警/司法",
@@ -3741,7 +3741,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "开平",
   "project": "fuzhi",
   "title": "江门开平·辅警/司法",
@@ -3758,7 +3758,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "江门地区",
+  "region": "江门",
   "area": "鹤山",
   "project": "fuzhi",
   "title": "江门鹤山·辅警/司法",
@@ -3775,7 +3775,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "河源地区",
+  "region": "河源",
   "area": "和平",
   "project": "shiye",
   "title": "河源和平·事业单位",
@@ -3792,7 +3792,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "河源地区",
+  "region": "河源",
   "area": "紫金",
   "project": "shiye",
   "title": "河源紫金·事业单位",
@@ -3809,7 +3809,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "河源地区",
+  "region": "河源",
   "area": "连平",
   "project": "shiye",
   "title": "河源连平·事业单位",
@@ -3826,7 +3826,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "河源地区",
+  "region": "河源",
   "area": "龙川",
   "project": "shiye",
   "title": "河源龙川·事业单位",
@@ -3843,7 +3843,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "河源地区",
+  "region": "河源",
   "area": "连平",
   "project": "yiliao",
   "title": "河源连平·医疗卫生",
@@ -3860,7 +3860,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "河源地区",
+  "region": "河源",
   "area": "东源",
   "project": "jiao",
   "title": "河源东源·教师招聘",
@@ -3877,7 +3877,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "河源地区",
+  "region": "河源",
   "area": "源城",
   "project": "jiao",
   "title": "河源源城·教师招聘",
@@ -3894,7 +3894,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "河源地区",
+  "region": "河源",
   "area": "紫金",
   "project": "jiao",
   "title": "河源紫金·教师招聘",
@@ -3911,7 +3911,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "河源地区",
+  "region": "河源",
   "area": "连平",
   "project": "jiao",
   "title": "河源连平·教师招聘",
@@ -3928,7 +3928,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "河源地区",
+  "region": "河源",
   "area": "龙川",
   "project": "jiao",
   "title": "河源龙川·教师招聘",
@@ -3945,7 +3945,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "河源地区",
+  "region": "河源",
   "area": "东源",
   "project": "bianwai",
   "title": "河源东源·编外",
@@ -3962,7 +3962,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "河源地区",
+  "region": "河源",
   "area": "东源",
   "project": "fuzhi",
   "title": "河源东源·辅警/司法",
@@ -3979,7 +3979,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "盐田",
   "project": "shiye",
   "title": "深圳盐田·事业单位",
@@ -3996,7 +3996,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "坪山",
   "project": "shiye",
   "title": "深圳坪山·事业单位",
@@ -4013,7 +4013,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "盐田",
   "project": "shiye",
   "title": "深圳盐田·事业单位",
@@ -4030,7 +4030,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "龙岗",
   "project": "shiye",
   "title": "深圳龙岗·事业单位",
@@ -4047,7 +4047,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "南山",
   "project": "shiye",
   "title": "深圳南山·事业单位",
@@ -4064,7 +4064,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "坪山",
   "project": "shiye",
   "title": "深圳坪山·事业单位",
@@ -4081,7 +4081,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "光明",
   "project": "jiao",
   "title": "深圳光明·教师招聘",
@@ -4098,7 +4098,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "光明",
   "project": "jiao",
   "title": "深圳光明·教师招聘",
@@ -4115,7 +4115,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "南山",
   "project": "jiao",
   "title": "深圳南山·教师招聘",
@@ -4132,7 +4132,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "南山",
   "project": "jiao",
   "title": "深圳南山·教师招聘",
@@ -4149,7 +4149,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "坪山",
   "project": "jiao",
   "title": "深圳坪山·教师招聘",
@@ -4166,7 +4166,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "坪山",
   "project": "jiao",
   "title": "深圳坪山·教师招聘",
@@ -4183,7 +4183,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "宝安",
   "project": "jiao",
   "title": "深圳宝安·教师招聘",
@@ -4200,7 +4200,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "宝安",
   "project": "jiao",
   "title": "深圳宝安·教师招聘",
@@ -4217,7 +4217,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "罗湖",
   "project": "jiao",
   "title": "深圳罗湖·教师招聘",
@@ -4234,7 +4234,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "盐田",
   "project": "jiao",
   "title": "深圳盐田·教师招聘",
@@ -4251,7 +4251,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "盐田",
   "project": "jiao",
   "title": "深圳盐田·教师招聘",
@@ -4268,7 +4268,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "福田",
   "project": "jiao",
   "title": "深圳福田·教师招聘",
@@ -4285,7 +4285,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "罗湖",
   "project": "jiao",
   "title": "深圳罗湖·教师招聘",
@@ -4302,7 +4302,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "罗湖",
   "project": "jiao",
   "title": "深圳罗湖·教师招聘",
@@ -4319,7 +4319,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "龙华",
   "project": "jiao",
   "title": "深圳龙华·教师招聘",
@@ -4336,7 +4336,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "龙华",
   "project": "jiao",
   "title": "深圳龙华·教师招聘",
@@ -4353,7 +4353,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "龙华",
   "project": "jiao",
   "title": "深圳龙华·教师招聘",
@@ -4370,7 +4370,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "龙岗",
   "project": "jiao",
   "title": "深圳龙岗·教师招聘",
@@ -4387,7 +4387,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "龙岗",
   "project": "jiao",
   "title": "深圳龙岗·教师招聘",
@@ -4404,7 +4404,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "光明",
   "project": "shequ",
   "title": "深圳光明·社区",
@@ -4421,7 +4421,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "南山",
   "project": "shequ",
   "title": "深圳南山·社区",
@@ -4438,7 +4438,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "宝安",
   "project": "shequ",
   "title": "深圳宝安·社区",
@@ -4455,7 +4455,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "南山",
   "project": "shequ",
   "title": "深圳南山·社区",
@@ -4472,7 +4472,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "福田",
   "project": "shequ",
   "title": "深圳福田·社区",
@@ -4489,7 +4489,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "福田",
   "project": "shequ",
   "title": "深圳福田·社区",
@@ -4506,7 +4506,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "龙华",
   "project": "shequ",
   "title": "深圳龙华·社区",
@@ -4523,7 +4523,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "龙岗",
   "project": "shequ",
   "title": "深圳龙岗·社区",
@@ -4540,7 +4540,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "宝安",
   "project": "bianwai",
   "title": "深圳宝安·编外",
@@ -4557,7 +4557,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "光明",
   "project": "bianwai",
   "title": "深圳光明·编外",
@@ -4574,7 +4574,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "南山",
   "project": "bianwai",
   "title": "深圳南山·编外",
@@ -4591,7 +4591,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "宝安",
   "project": "bianwai",
   "title": "深圳宝安·编外",
@@ -4608,7 +4608,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "龙华",
   "project": "bianwai",
   "title": "深圳龙华·编外",
@@ -4625,7 +4625,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "深圳地区",
+  "region": "深圳",
   "area": "龙岗",
   "project": "bianwai",
   "title": "深圳龙岗·编外",
@@ -4642,7 +4642,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "清新",
   "project": "shiye",
   "title": "清远清新·事业单位",
@@ -4659,7 +4659,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "连州",
   "project": "shiye",
   "title": "清远连州·事业单位",
@@ -4676,7 +4676,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "佛冈",
   "project": "shiye",
   "title": "清远佛冈·事业单位",
@@ -4693,7 +4693,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "佛冈",
   "project": "shiye",
   "title": "清远佛冈·事业单位",
@@ -4710,7 +4710,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "清城",
   "project": "shiye",
   "title": "清远清城·事业单位",
@@ -4727,7 +4727,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "英德",
   "project": "shiye",
   "title": "清远英德·事业单位",
@@ -4744,7 +4744,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "阳山",
   "project": "shiye",
   "title": "清远阳山·事业单位",
@@ -4761,7 +4761,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "佛冈",
   "project": "yiliao",
   "title": "清远佛冈·医疗卫生",
@@ -4778,7 +4778,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "清城",
   "project": "yiliao",
   "title": "清远清城·医疗卫生",
@@ -4795,7 +4795,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "清新",
   "project": "yiliao",
   "title": "清远清新·医疗卫生",
@@ -4812,7 +4812,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "阳山",
   "project": "yiliao",
   "title": "清远阳山·医疗卫生",
@@ -4829,7 +4829,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "清城",
   "project": "yiliao",
   "title": "清远清城·医疗卫生",
@@ -4846,7 +4846,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "清新",
   "project": "yiliao",
   "title": "清远清新·医疗卫生",
@@ -4863,7 +4863,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "英德",
   "project": "yiliao",
   "title": "清远英德·医疗卫生",
@@ -4880,7 +4880,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "连州",
   "project": "yiliao",
   "title": "清远连州·医疗卫生",
@@ -4897,7 +4897,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "连州",
   "project": "yiliao",
   "title": "清远连州·医疗卫生",
@@ -4914,7 +4914,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "佛冈",
   "project": "jiao",
   "title": "清远佛冈·教师招聘",
@@ -4931,7 +4931,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "清城",
   "project": "jiao",
   "title": "清远清城·教师招聘",
@@ -4948,7 +4948,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "清城",
   "project": "jiao",
   "title": "清远清城·教师招聘",
@@ -4965,7 +4965,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "清新",
   "project": "jiao",
   "title": "清远清新·教师招聘",
@@ -4982,7 +4982,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "清城",
   "project": "jiao",
   "title": "清远清城·教师招聘",
@@ -4999,7 +4999,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "英德",
   "project": "jiao",
   "title": "清远英德·教师招聘",
@@ -5016,7 +5016,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "英德",
   "project": "jiao",
   "title": "清远英德·教师招聘",
@@ -5033,7 +5033,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "连州",
   "project": "jiao",
   "title": "清远连州·教师招聘",
@@ -5050,7 +5050,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "阳山",
   "project": "jiao",
   "title": "清远阳山·教师招聘",
@@ -5067,7 +5067,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "清城",
   "project": "fuzhi",
   "title": "清远清城·辅警/司法",
@@ -5084,7 +5084,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "清城",
   "project": "fuzhi",
   "title": "清远清城·辅警/司法",
@@ -5101,7 +5101,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "清新",
   "project": "fuzhi",
   "title": "清远清新·辅警/司法",
@@ -5118,7 +5118,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "清远地区",
+  "region": "清远",
   "area": "英德",
   "project": "fuzhi",
   "title": "清远英德·辅警/司法",
@@ -5135,7 +5135,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "徐闻",
   "project": "shiye",
   "title": "湛江徐闻·事业单位",
@@ -5152,7 +5152,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "徐闻",
   "project": "shiye",
   "title": "湛江徐闻·事业单位",
@@ -5169,7 +5169,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "霞山",
   "project": "shiye",
   "title": "湛江霞山·事业单位",
@@ -5186,7 +5186,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "吴川",
   "project": "yiliao",
   "title": "湛江吴川·医疗卫生",
@@ -5203,7 +5203,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "徐闻",
   "project": "yiliao",
   "title": "湛江徐闻·医疗卫生",
@@ -5220,7 +5220,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "遂溪",
   "project": "yiliao",
   "title": "湛江遂溪·医疗卫生",
@@ -5237,7 +5237,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "遂溪",
   "project": "yiliao",
   "title": "湛江遂溪·医疗卫生",
@@ -5254,7 +5254,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "霞山",
   "project": "yiliao",
   "title": "湛江霞山·医疗卫生",
@@ -5271,7 +5271,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "吴川",
   "project": "jiao",
   "title": "湛江吴川·教师招聘",
@@ -5288,7 +5288,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "吴川",
   "project": "jiao",
   "title": "湛江吴川·教师招聘",
@@ -5305,7 +5305,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "坡头",
   "project": "jiao",
   "title": "湛江坡头·教师招聘",
@@ -5322,7 +5322,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "廉江",
   "project": "jiao",
   "title": "湛江廉江·教师招聘",
@@ -5339,7 +5339,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "廉江",
   "project": "jiao",
   "title": "湛江廉江·教师招聘",
@@ -5356,7 +5356,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "徐闻",
   "project": "jiao",
   "title": "湛江徐闻·教师招聘",
@@ -5373,7 +5373,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "赤坎",
   "project": "jiao",
   "title": "湛江赤坎·教师招聘",
@@ -5390,7 +5390,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "遂溪",
   "project": "jiao",
   "title": "湛江遂溪·教师招聘",
@@ -5407,7 +5407,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "雷州",
   "project": "jiao",
   "title": "湛江雷州·教师招聘",
@@ -5424,7 +5424,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "霞山",
   "project": "jiao",
   "title": "湛江霞山·教师招聘",
@@ -5441,7 +5441,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "麻章",
   "project": "jiao",
   "title": "湛江麻章·教师招聘",
@@ -5458,7 +5458,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "廉江",
   "project": "fuzhi",
   "title": "湛江廉江·辅警/司法",
@@ -5475,7 +5475,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "湛江地区",
+  "region": "湛江",
   "area": "麻章",
   "project": "fuzhi",
   "title": "湛江麻章·辅警/司法",
@@ -5492,7 +5492,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "潮州地区",
+  "region": "潮州",
   "area": "湘桥",
   "project": "yiliao",
   "title": "潮州湘桥·医疗卫生",
@@ -5509,7 +5509,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "潮州地区",
+  "region": "潮州",
   "area": "潮安",
   "project": "yiliao",
   "title": "潮州潮安·医疗卫生",
@@ -5526,7 +5526,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "潮州地区",
+  "region": "潮州",
   "area": "潮安",
   "project": "yiliao",
   "title": "潮州潮安·医疗卫生",
@@ -5543,7 +5543,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "潮州地区",
+  "region": "潮州",
   "area": "饶平",
   "project": "yiliao",
   "title": "潮州饶平·医疗卫生",
@@ -5560,7 +5560,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "潮州地区",
+  "region": "潮州",
   "area": "湘桥",
   "project": "jiao",
   "title": "潮州湘桥·教师招聘",
@@ -5577,7 +5577,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "潮州地区",
+  "region": "潮州",
   "area": "湘桥",
   "project": "jiao",
   "title": "潮州湘桥·教师招聘",
@@ -5594,7 +5594,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "潮州地区",
+  "region": "潮州",
   "area": "潮安",
   "project": "jiao",
   "title": "潮州潮安·教师招聘",
@@ -5611,7 +5611,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "潮州地区",
+  "region": "潮州",
   "area": "饶平",
   "project": "jiao",
   "title": "潮州饶平·教师招聘",
@@ -5628,7 +5628,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "潮州地区",
+  "region": "潮州",
   "area": "湘桥",
   "project": "shequ",
   "title": "潮州湘桥·社区",
@@ -5645,7 +5645,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "金湾",
   "project": "shiye",
   "title": "珠海金湾·事业单位",
@@ -5662,7 +5662,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "金湾",
   "project": "bianwai",
   "title": "珠海金湾·编外",
@@ -5679,7 +5679,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "斗门",
   "project": "yiliao",
   "title": "珠海斗门·医疗卫生",
@@ -5696,7 +5696,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "斗门",
   "project": "yiliao",
   "title": "珠海斗门·医疗卫生",
@@ -5713,7 +5713,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "金湾",
   "project": "yiliao",
   "title": "珠海金湾·医疗卫生",
@@ -5730,7 +5730,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "香洲",
   "project": "jiao",
   "title": "珠海香洲·教师招聘",
@@ -5747,7 +5747,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "斗门",
   "project": "jiao",
   "title": "珠海斗门·教师招聘",
@@ -5764,7 +5764,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "金湾",
   "project": "jiao",
   "title": "珠海金湾·教师招聘",
@@ -5781,7 +5781,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "金湾",
   "project": "jiao",
   "title": "珠海金湾·教师招聘",
@@ -5798,7 +5798,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "香洲",
   "project": "jiao",
   "title": "珠海香洲·教师招聘",
@@ -5815,7 +5815,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "香洲",
   "project": "jiao",
   "title": "珠海香洲·教师招聘",
@@ -5832,7 +5832,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "金湾",
   "project": "fuzhi",
   "title": "珠海金湾·辅警/司法",
@@ -5849,7 +5849,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "香洲",
   "project": "shequ",
   "title": "珠海香洲·社区",
@@ -5866,7 +5866,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "珠海地区",
+  "region": "珠海",
   "area": "香洲",
   "project": "fuzhi",
   "title": "珠海香洲·辅警/司法",
@@ -5883,7 +5883,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "封开",
   "project": "shiye",
   "title": "肇庆封开·事业单位",
@@ -5900,7 +5900,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "端州",
   "project": "shiye",
   "title": "肇庆端州·事业单位",
@@ -5917,7 +5917,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "四会",
   "project": "yiliao",
   "title": "肇庆四会·医疗卫生",
@@ -5934,7 +5934,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "高要",
   "project": "yiliao",
   "title": "肇庆高要·医疗卫生",
@@ -5951,7 +5951,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "四会",
   "project": "jiao",
   "title": "肇庆四会·教师招聘",
@@ -5968,7 +5968,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "广宁",
   "project": "jiao",
   "title": "肇庆广宁·教师招聘",
@@ -5985,7 +5985,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "德庆",
   "project": "jiao",
   "title": "肇庆德庆·教师招聘",
@@ -6002,7 +6002,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "四会",
   "project": "jiao",
   "title": "肇庆四会·教师招聘",
@@ -6019,7 +6019,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "封开",
   "project": "jiao",
   "title": "肇庆封开·教师招聘",
@@ -6036,7 +6036,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "怀集",
   "project": "jiao",
   "title": "肇庆怀集·教师招聘",
@@ -6053,7 +6053,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "端州",
   "project": "jiao",
   "title": "肇庆端州·教师招聘",
@@ -6070,7 +6070,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "端州",
   "project": "jiao",
   "title": "肇庆端州·教师招聘",
@@ -6087,7 +6087,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "高要",
   "project": "jiao",
   "title": "肇庆高要·教师招聘",
@@ -6104,7 +6104,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "鼎湖",
   "project": "jiao",
   "title": "肇庆鼎湖·教师招聘",
@@ -6121,7 +6121,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "肇庆地区",
+  "region": "肇庆",
   "area": "高要",
   "project": "jiao",
   "title": "肇庆高要·教师招聘",
@@ -6138,7 +6138,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "高州",
   "project": "shiye",
   "title": "茂名高州·事业单位",
@@ -6155,7 +6155,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "信宜",
   "project": "shiye",
   "title": "茂名信宜·事业单位",
@@ -6172,7 +6172,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "电白",
   "project": "shiye",
   "title": "茂名电白·事业单位",
@@ -6189,7 +6189,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "电白",
   "project": "shiye",
   "title": "茂名电白·事业单位",
@@ -6206,7 +6206,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "茂南",
   "project": "shiye",
   "title": "茂名茂南·事业单位",
@@ -6223,7 +6223,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "信宜",
   "project": "yiliao",
   "title": "茂名信宜·医疗卫生",
@@ -6240,7 +6240,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "信宜",
   "project": "yiliao",
   "title": "茂名信宜·医疗卫生",
@@ -6257,7 +6257,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "化州",
   "project": "yiliao",
   "title": "茂名化州·医疗卫生",
@@ -6274,7 +6274,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "高州",
   "project": "yiliao",
   "title": "茂名高州·医疗卫生",
@@ -6291,7 +6291,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "信宜",
   "project": "jiao",
   "title": "茂名信宜·教师招聘",
@@ -6308,7 +6308,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "信宜",
   "project": "jiao",
   "title": "茂名信宜·教师招聘",
@@ -6325,7 +6325,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "化州",
   "project": "jiao",
   "title": "茂名化州·教师招聘",
@@ -6342,7 +6342,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "茂南",
   "project": "jiao",
   "title": "茂名茂南·教师招聘",
@@ -6359,7 +6359,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "电白",
   "project": "jiao",
   "title": "茂名电白·教师招聘",
@@ -6376,7 +6376,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "电白",
   "project": "jiao",
   "title": "茂名电白·教师招聘",
@@ -6393,7 +6393,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "茂南",
   "project": "jiao",
   "title": "茂名茂南·教师招聘",
@@ -6410,7 +6410,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "高州",
   "project": "jiao",
   "title": "茂名高州·教师招聘",
@@ -6427,7 +6427,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "茂南",
   "project": "shequ",
   "title": "茂名茂南·社区",
@@ -6444,7 +6444,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "电白",
   "project": "shequ",
   "title": "茂名电白·社区",
@@ -6461,7 +6461,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "茂名地区",
+  "region": "茂名",
   "area": "茂南",
   "project": "shequ",
   "title": "茂名茂南·社区",
@@ -6478,7 +6478,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "阳江地区",
+  "region": "阳江",
   "area": "江城",
   "project": "yiliao",
   "title": "阳江江城·医疗卫生",
@@ -6495,7 +6495,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "阳江地区",
+  "region": "阳江",
   "area": "阳春",
   "project": "yiliao",
   "title": "阳江阳春·医疗卫生",
@@ -6512,7 +6512,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "阳江地区",
+  "region": "阳江",
   "area": "江城",
   "project": "jiao",
   "title": "阳江江城·教师招聘",
@@ -6529,7 +6529,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "阳江地区",
+  "region": "阳江",
   "area": "阳东",
   "project": "jiao",
   "title": "阳江阳东·教师招聘",
@@ -6546,7 +6546,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "阳江地区",
+  "region": "阳江",
   "area": "阳春",
   "project": "jiao",
   "title": "阳江阳春·教师招聘",
@@ -6563,7 +6563,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "阳江地区",
+  "region": "阳江",
   "area": "阳春",
   "project": "jiao",
   "title": "阳江阳春·教师招聘",
@@ -6580,7 +6580,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "阳江地区",
+  "region": "阳江",
   "area": "阳西",
   "project": "jiao",
   "title": "阳江阳西·教师招聘",
@@ -6597,7 +6597,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "阳江地区",
+  "region": "阳江",
   "area": "阳西",
   "project": "jiao",
   "title": "阳江阳西·教师招聘",
@@ -6614,7 +6614,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "阳江地区",
+  "region": "阳江",
   "area": "江城",
   "project": "shequ",
   "title": "阳江江城·社区",
@@ -6631,7 +6631,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "阳江地区",
+  "region": "阳江",
   "area": "阳春",
   "project": "fuzhi",
   "title": "阳江阳春·辅警/司法",
@@ -6648,7 +6648,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "乐昌",
   "project": "shiye",
   "title": "韶关乐昌·事业单位",
@@ -6665,7 +6665,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "乳源瑶族",
   "project": "shiye",
   "title": "韶关乳源瑶族·事业单位",
@@ -6682,7 +6682,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "仁化",
   "project": "shiye",
   "title": "韶关仁化·事业单位",
@@ -6699,7 +6699,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "南雄",
   "project": "shiye",
   "title": "韶关南雄·事业单位",
@@ -6716,7 +6716,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "始兴",
   "project": "shiye",
   "title": "韶关始兴·事业单位",
@@ -6733,7 +6733,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "新丰",
   "project": "shiye",
   "title": "韶关新丰·事业单位",
@@ -6750,7 +6750,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "曲江",
   "project": "shiye",
   "title": "韶关曲江·事业单位",
@@ -6767,7 +6767,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "浈江",
   "project": "shiye",
   "title": "韶关浈江·事业单位",
@@ -6784,7 +6784,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "翁源",
   "project": "shiye",
   "title": "韶关翁源·事业单位",
@@ -6801,7 +6801,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "始兴",
   "project": "yiliao",
   "title": "韶关始兴·医疗卫生",
@@ -6818,7 +6818,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "曲江",
   "project": "yiliao",
   "title": "韶关曲江·医疗卫生",
@@ -6835,7 +6835,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "乐昌",
   "project": "yiliao",
   "title": "韶关乐昌·医疗卫生",
@@ -6852,7 +6852,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "仁化",
   "project": "yiliao",
   "title": "韶关仁化·医疗卫生",
@@ -6869,7 +6869,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "仁化",
   "project": "yiliao",
   "title": "韶关仁化·医疗卫生",
@@ -6886,7 +6886,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "南雄",
   "project": "yiliao",
   "title": "韶关南雄·医疗卫生",
@@ -6903,7 +6903,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "新丰",
   "project": "yiliao",
   "title": "韶关新丰·医疗卫生",
@@ -6920,7 +6920,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "曲江",
   "project": "yiliao",
   "title": "韶关曲江·医疗卫生",
@@ -6937,7 +6937,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "武江",
   "project": "yiliao",
   "title": "韶关武江·医疗卫生",
@@ -6954,7 +6954,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "浈江",
   "project": "yiliao",
   "title": "韶关浈江·医疗卫生",
@@ -6971,7 +6971,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "翁源",
   "project": "yiliao",
   "title": "韶关翁源·医疗卫生",
@@ -6988,7 +6988,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "乐昌",
   "project": "jiao",
   "title": "韶关乐昌·教师招聘",
@@ -7005,7 +7005,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "仁化",
   "project": "jiao",
   "title": "韶关仁化·教师招聘",
@@ -7022,7 +7022,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "仁化",
   "project": "jiao",
   "title": "韶关仁化·教师招聘",
@@ -7039,7 +7039,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "南雄",
   "project": "jiao",
   "title": "韶关南雄·教师招聘",
@@ -7056,7 +7056,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "南雄",
   "project": "jiao",
   "title": "韶关南雄·教师招聘",
@@ -7073,7 +7073,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "始兴",
   "project": "jiao",
   "title": "韶关始兴·教师招聘",
@@ -7090,7 +7090,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "始兴",
   "project": "jiao",
   "title": "韶关始兴·教师招聘",
@@ -7107,7 +7107,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "新丰",
   "project": "jiao",
   "title": "韶关新丰·教师招聘",
@@ -7124,7 +7124,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "新丰",
   "project": "jiao",
   "title": "韶关新丰·教师招聘",
@@ -7141,7 +7141,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "曲江",
   "project": "jiao",
   "title": "韶关曲江·教师招聘",
@@ -7158,7 +7158,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "武江",
   "project": "jiao",
   "title": "韶关武江·教师招聘",
@@ -7175,7 +7175,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "浈江",
   "project": "jiao",
   "title": "韶关浈江·教师招聘",
@@ -7192,7 +7192,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "翁源",
   "project": "jiao",
   "title": "韶关翁源·教师招聘",
@@ -7209,7 +7209,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "翁源",
   "project": "jiao",
   "title": "韶关翁源·教师招聘",
@@ -7226,7 +7226,7 @@ window.COUNTY_KAOQING = [
   "updatedAt": "2026-08-08"
  },
  {
-  "region": "韶关地区",
+  "region": "韶关",
   "area": "武江",
   "project": "fuzhi",
   "title": "韶关武江·辅警/司法",

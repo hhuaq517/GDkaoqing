@@ -67,12 +67,21 @@ window.App = (function(){
     document.addEventListener('touchend', ()=>{ dragging=false; });
   }
 
+  function menuToggle(){
+    const s=document.getElementById('side'), m=document.getElementById('sideMask');
+    const open=!s.classList.contains('open');
+    s.classList.toggle('open',open); m.classList.toggle('show',open);
+  }
+
   /* ---------- 导航 ---------- */
   const TITLES={ overview:'广东考情总览', search:'地区考情查找', import:'考情导入', settings:'设置' };
   function nav(){
     document.querySelectorAll('.nav-item[data-view]').forEach(btn=>{
       btn.addEventListener('click', ()=>{
         const v=btn.dataset.view;
+        // 移动端点导航后收起侧栏
+        document.getElementById('side').classList.remove('open');
+        document.getElementById('sideMask').classList.remove('show');
         document.querySelectorAll('.view').forEach(s=>s.classList.remove('active'));
         document.querySelectorAll('.nav-item').forEach(b=>b.classList.remove('active'));
         const target=document.getElementById('view-'+v);
@@ -93,7 +102,7 @@ window.App = (function(){
     const s=document.getElementById('view-search');
     if(q==='zhenti'){
       document.getElementById('zhentiPanel').style.display='block';
-      Search.showZhentiQuick();
+      loadZhen(()=>Search.showZhentiQuick());
     }
     // 项目快捷 → 设置搜索并触发
     if(['shiye','jiao','yiliao'].includes(q)){
@@ -105,12 +114,22 @@ window.App = (function(){
     }
   }
 
+  /* ---------- 真题索引懒加载（zhenti.js ~1.2MB，进入真题面板才注入） ---------- */
+  function loadZhen(cb){
+    if(window.ZHENTI){ if(cb) cb(); return; }
+    const s=document.createElement('script');
+    s.src='data/zhenti.js';
+    s.onload=()=>{ if(cb) cb(); }; s.onerror=()=>{ if(cb) cb(); };
+    document.head.appendChild(s);
+  }
+
   /* ---------- 统计概览 ---------- */
   function stats(){
     const zt=window.ZHENTI; let folders=0, files=0;
     if(zt&&zt.regions){ zt.regions.forEach(r=>{ (r.projects||[]).forEach(p=>{ (p.sources||[]).forEach(x=>{ folders++; files+=x.fileCount||0; }); }); }); }
     document.getElementById('statCity').textContent=(zt&&zt.regions?zt.regions.length:22)+' 个地市';
-    document.getElementById('statKq').textContent=(window.KAOQING.records? KAOQING.records.length:0)+' 条';
+    const all = allRecords();
+    document.getElementById('statKq').textContent=all.length+' 条';
     document.getElementById('statZt').textContent=folders;
     document.getElementById('statZtF').textContent=files;
     // 县区覆盖：记录中 area 触及的县区数
@@ -136,7 +155,7 @@ window.App = (function(){
     const pwd=document.getElementById('adminPwd').value;
     const ok= pwd && (pwd=== (SETTINGS.adminPassword||'admin123') || pwd=== (session&&session.adminPassword||''));
     if(ok){ loggedIn=true; document.getElementById('importArea').style.opacity=1; document.getElementById('importArea').style.pointerEvents='';
-      document.getElementById('loginMsg').textContent='✔ 已通过验证，可导入/编辑'; toast('验证通过'); }
+      document.getElementById('loginMsg').textContent='✔ 验证通过，可编辑（本机会话）'; toast('验证通过'); }
     else{ document.getElementById('loginMsg').textContent='✘ 口令错误'; }
   }
   function changePwd(){
@@ -152,6 +171,25 @@ window.App = (function(){
   function showDetail(rec){
     document.getElementById('dTitle').textContent = `${rec.region||''} · ${rec.title||rec.project||''}`;
     document.getElementById('dBody').innerHTML = detailHTML(rec);
+    // 加"复制文本"按钮（生成可发给学员的纯文本简报）
+    const dt=document.createElement('div');
+    dt.style.marginTop='12px'; dt.style.display='flex'; dt.style.gap='8px';
+    const cb=document.createElement('button'); cb.className='btn primary'; cb.textContent='📋 复制考情文本';
+    cb.onclick=()=>{
+      const dd=rec.detail||{};
+      const lines=[`【${rec.title||rec.project}】`,
+        `地区：${rec.region||''}${rec.area?' · '+rec.area:''}`,
+        `年份：${rec.year||'-'}`, `可信度：${plainSource(rec)}`, `更新：${rec.updatedAt||'-'}`, '',
+        `${rec.summary||''}`, '',
+        ...Object.entries({科目:dd.dui,题型:dd.duan,时长题量:dd.shou,考时间规律:dd.shijian,要求:dd.yao,竞争难度进面:dd.jingz,待遇性价比:dd.daiyu,真题说明:dd.zhenti})
+          .filter(([k,v])=>v).map(([k,v])=>`${k}：${v}`)];
+      const p=lines.join('\n');
+      (navigator.clipboard?navigator.clipboard.writeText(p):Promise.reject(new Error('no-clip')))
+        .then(()=>toast('已复制，可直接粘贴到咨询对话'))
+        .catch(()=>{ const ta=document.createElement('textarea'); ta.value=p; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy'); toast('已复制（兼容模式）');}catch(e){ toast('复制失败，请手动选中'); } ta.remove(); });
+    };
+    dt.appendChild(cb);
+    document.getElementById('dBody').appendChild(dt);
     document.getElementById('detailMask').classList.add('show');
   }
   function closeDetail(){ document.getElementById('detailMask').classList.remove('show'); }
@@ -164,6 +202,9 @@ window.App = (function(){
     h+=`<div class="kv"><div class="k">项目</div><div class="v">${esc(rec.title||'')}</div></div>`;
     h+=`<div class="kv"><div class="k">年份</div><div class="v">${esc(rec.year||'-')}</div></div>`;
     h+=`<div class="kv"><div class="k">县区/单位</div><div class="v">${esc(rec.area||'全部')}</div></div>`;
+    // 来源与更新时间（权威性视觉）
+    h+=`<div class="kv"><div class="k">可信度</div><div class="v">${sourceBadge(rec)}</div></div>`;
+    h+=`<div class="kv"><div class="k">资料更新</div><div class="v">${esc(rec.updatedAt||rec.year||'-')}</div></div>`;
     h+='</div></div>';
     if(rec.summary) h+=`<div class="card"><b>概述</b><div class="pre-wrap">${esc(rec.summary)}</div></div>`;
     h+='<div class="card"><h3>详细考情</h3><div class="kv-grid">';
@@ -172,6 +213,24 @@ window.App = (function(){
     h+='</div></div>';
     if(rec.tags&&rec.tags.length) h+='<div>'+rec.tags.map(t=>`<span class="chip hl">${esc(t)}</span>`).join('')+'</div>';
     return h;
+  }
+  function sourceBadge(rec){
+    const nil=(window.SETTINGS&&window.SETTINGS.showSourceTag===false);
+    if(nil) return '-';
+    const s=String(rec.source||'');
+    const s2=String(rec.summary||'');
+    if(s.indexOf('真题库')>-1 || s2.indexOf('真题库')>-1) return '<span class="badge" style="background:rgba(26,158,111,.15);color:var(--brand-2)">✔ 真题库</span>';
+    if(s.indexOf('公开信息')>-1 || s2.indexOf('公开信息')>-1) return '<span class="badge" style="background:rgba(43,111,179,.12);color:var(--brand)">◍ 公开信息</span>';
+    if(s2.indexOf('待核')>-1 || s2.indexOf('待确认')>-1 || s.indexOf('待核')>-1) return '<span class="badge" style="background:rgba(225,82,79,.12);color:var(--accent)">! 待核实</span>';
+    return '<span class="badge">常规整理</span>';
+  }
+  function plainSource(rec){
+    if(window.SETTINGS && window.SETTINGS.showSourceTag===false) return '-';
+    const s=String(rec.source||''), s2=String(rec.summary||''), yr=String(rec.year||'');
+    if(s.indexOf('真题库')>-1 || s2.indexOf('真题库')>-1) return '真题库（真题文件真实存在）';
+    if(s.indexOf('公开信息')>-1 || s2.indexOf('公开信息')>-1) return '公开信息整理，以官方公告为准';
+    if(s2.indexOf('待核')>-1 || s2.indexOf('待确认')>-1 || yr.indexOf('待')>-1) return '待核实，请以官方公告为准';
+    return '常规整理';
   }
 
   /* ---------- 初始化 ---------- */
@@ -234,6 +293,8 @@ window.App = (function(){
     downloadTemplate:()=>Import.downloadTemplate(),
     importBatch:()=>Import.batch(),
     quick:(q)=>quick(q),
+    loadZhen,
+    menuToggle,
     esc
   };
 })();
