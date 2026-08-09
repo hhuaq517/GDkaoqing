@@ -77,8 +77,8 @@ window.Search = (function(){
     list.forEach(rec=>{
       const pj=(window.PROJECTS||[]).find(p=>p.id===rec.project);
       const card=document.createElement('div'); card.className='kq-card'; card.style.borderLeftColor=pj?pj.color:'var(--brand)';
-      const dur=rec.detail&&rec.detail.shijian?rec.detail.shijian:'时间待补';
-      const dui=rec.detail&&rec.detail.dui?rec.detail.dui:'科目待补';
+      const dur=rec.detail&&(rec.detail.shijian||rec.detail['时间规律'])?(rec.detail.shijian||rec.detail['时间规律']):'时间待补';
+      const dui=rec.detail&&(rec.detail.dui||rec.detail['科目'])?(rec.detail.dui||rec.detail['科目']):'科目待补';
       card.innerHTML=`
         <div class="top">
           <span class="city">${window.App.esc(rec.region||'')}</span>

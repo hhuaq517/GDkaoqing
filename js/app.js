@@ -177,11 +177,12 @@ window.App = (function(){
     const cb=document.createElement('button'); cb.className='btn primary'; cb.textContent='📋 复制考情文本';
     cb.onclick=()=>{
       const dd=rec.detail||{};
+      const get=(en,cn)=>dd[en]||dd[cn];
       const lines=[`【${rec.title||rec.project}】`,
         `地区：${rec.region||''}${rec.area?' · '+rec.area:''}`,
         `年份：${rec.year||'-'}`, `可信度：${plainSource(rec)}`, `更新：${rec.updatedAt||'-'}`, '',
         `${rec.summary||''}`, '',
-        ...Object.entries({科目:dd.dui,题型:dd.duan,时长题量:dd.shou,考时间规律:dd.shijian,要求:dd.yao,竞争难度进面:dd.jingz,待遇性价比:dd.daiyu,真题说明:dd.zhenti})
+        ...Object.entries({科目:get('dui','科目'),题型:get('duan','题型'),时长题量:get('shou','时长题量'),招考时间规律:get('shijian','时间规律'),要求:get('yao','要求'),竞争难度进面:get('jingz','竞争难度'),待遇性价比:get('daiyu','待遇'),真题说明:get('zhenti','真题')})
           .filter(([k,v])=>v).map(([k,v])=>`${k}：${v}`)];
       const p=lines.join('\n');
       (navigator.clipboard?navigator.clipboard.writeText(p):Promise.reject(new Error('no-clip')))
@@ -208,8 +209,17 @@ window.App = (function(){
     h+='</div></div>';
     if(rec.summary) h+=`<div class="card"><b>概述</b><div class="pre-wrap">${esc(rec.summary)}</div></div>`;
     h+='<div class="card"><h3>详细考情</h3><div class="kv-grid">';
-    const map={dui:'考试科目',duan:'题型分布',shou:'时长题量',shijian:'招考时间规律',yao:'学历/专业/户籍要求',jingz:'竞争难度/进面参考',daiyu:'待遇性价比',zhenti:'真题说明'};
-    for(const k in map){ const v=d[k]; if(v) h+=`<div class="kv"><div class="k">${map[k]}</div><div class="v">${esc(v)}</div></div>`; }
+    // 兼容两套 detail 键名体系：中文键（省级/市级手写数据）与英文键（导入/县区生成）
+    const map={dui:'考试科目',duan:'题型分布',shou:'时长题量',shijian:'招考时间规律',yao:'学历/专业/户籍要求',jingz:'竞争难度/进面参考',daiyu:'待遇性价比',zhenti:'真题说明',
+      '科目':'考试科目','题型':'题型分布','时长题量':'时长题量','时间规律':'招考时间规律','要求':'学历/专业/户籍要求','竞争难度':'竞争难度/进面参考','待遇':'待遇性价比','真题':'真题说明'};
+    const shown={};
+    for(const k in map){
+      const v = d[k];
+      if(!v) continue;
+      if(shown[map[k]]) continue;
+      shown[map[k]]=true;
+      h+=`<div class="kv"><div class="k">${map[k]}</div><div class="v">${esc(v)}</div></div>`;
+    }
     h+='</div></div>';
     if(rec.tags&&rec.tags.length) h+='<div>'+rec.tags.map(t=>`<span class="chip hl">${esc(t)}</span>`).join('')+'</div>';
     return h;
