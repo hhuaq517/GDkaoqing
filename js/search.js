@@ -77,6 +77,24 @@ window.Search = (function(){
     list.forEach(rec=>{
       const pj=(window.PROJECTS||[]).find(p=>p.id===rec.project);
       const card=document.createElement('div'); card.className='kq-card'; card.style.borderLeftColor=pj?pj.color:'var(--brand)';
+      const isZhen = isZhenti(rec);   // 县区真题线索类记录
+      if(isZhen){
+        // 降级呈现：真题线索卡，突出真题目录直达
+        const fold=(rec.detail&&rec.detail.zhenti||'').replace(/^[已]?收录真题，样本[：:]/,'').slice(0,60);
+        card.innerHTML=`
+          <div class="top">
+            <span class="city">${window.App.esc(rec.region||'')}</span>
+            <span class="proj" style="background:${pj?pj.color:'var(--brand)'}">${window.App.esc(pj?pj.name:rec.project)}</span>
+            <span class="years">${rec.year?window.App.esc(rec.year):''}${rec.area?' · '+window.App.esc(rec.area):''}</span>
+            <span class="src-tag">真题线索</span>
+          </div>
+          <div class="sum"><em>该地区本项目的真题已收录（真题文件真实存在），考情细节待补充。</em><br>${fold?('样本：'+window.App.esc(fold)):''}</div>
+          <div class="meta" style="border-top:0"><span>📚 ${window.App.esc(fold||rec.summary||'真题库收录')}</span></div>
+          <div class="open zhen-go" data-r="${window.App.esc(rec.region)}" data-p="${window.App.esc(rec.project)}">📂 查看该县区真题目录 ▸</div>`;
+        card.querySelector('.zhen-go').addEventListener('click', ()=>openZhentiDir(rec.region, rec.project));
+        grid.appendChild(card);
+        return;
+      }
       const dur=rec.detail&&(rec.detail.shijian||rec.detail['时间规律'])?(rec.detail.shijian||rec.detail['时间规律']):'时间待补';
       const dui=rec.detail&&(rec.detail.dui||rec.detail['科目'])?(rec.detail.dui||rec.detail['科目']):'科目待补';
       card.innerHTML=`
@@ -93,6 +111,28 @@ window.Search = (function(){
       grid.appendChild(card);
     });
     box.appendChild(grid);
+  }
+  // 判断是否"真题线索"记录：存在 area 且 detail 仅有 zhenti 键
+  function isZhenti(rec){
+    if(!rec.area) return false;
+    const d=rec.detail||{};
+    return Object.keys(d).every(k=>k==='zhenti') && !!d.zhenti;
+  }
+  // 跳到真题索引：地区(裸名)+项目(id) → 真题索引地区(带"地区")+项目(文件夹名)
+  function openZhentiDir(regionBare, projId){
+    window.App.loadZhen(()=>{
+      const zt=window.ZHENTI;
+      if(!zt||!zt.regions){ window.App.toast('真题索引未就绪'); return; }
+      const zr=zt.regions.find(r=>r.region.replace(/地区$/,'')===regionBare);
+      ztInitRegions();
+      const rSel=document.getElementById('ztRegion'); rSel.value=zr?zr.region:'';
+      const folder=(zr&&zr.projects||[]).find(p=>window.App.classify(p.project)===projId);
+      const pSel=document.getElementById('ztProject'); pSel.value=folder?folder.project:'';
+      document.getElementById('zhentiPanel').style.display='block';
+      if(window.location.hash!=='search'){ document.querySelector('.nav-item[data-view="search"]').click(); }
+      document.getElementById('ztTree').scrollIntoView({behavior:'smooth', block:'start'});
+      ztRun();
+    });
   }
 
   /* ---------- 真题索引 ---------- */

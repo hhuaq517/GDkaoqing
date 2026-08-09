@@ -208,19 +208,26 @@ window.App = (function(){
     h+=`<div class="kv"><div class="k">资料更新</div><div class="v">${esc(rec.updatedAt||rec.year||'-')}</div></div>`;
     h+='</div></div>';
     if(rec.summary) h+=`<div class="card"><b>概述</b><div class="pre-wrap">${esc(rec.summary)}</div></div>`;
-    h+='<div class="card"><h3>详细考情</h3><div class="kv-grid">';
-    // 兼容两套 detail 键名体系：中文键（省级/市级手写数据）与英文键（导入/县区生成）
-    const map={dui:'考试科目',duan:'题型分布',shou:'时长题量',shijian:'招考时间规律',yao:'学历/专业/户籍要求',jingz:'竞争难度/进面参考',daiyu:'待遇性价比',zhenti:'真题说明',
-      '科目':'考试科目','题型':'题型分布','时长题量':'时长题量','时间规律':'招考时间规律','要求':'学历/专业/户籍要求','竞争难度':'竞争难度/进面参考','待遇':'待遇性价比','真题':'真题说明'};
-    const shown={};
-    for(const k in map){
-      const v = d[k];
-      if(!v) continue;
-      if(shown[map[k]]) continue;
-      shown[map[k]]=true;
-      h+=`<div class="kv"><div class="k">${map[k]}</div><div class="v">${esc(v)}</div></div>`;
+    // 真题线索型记录：不渲染空的"详细考情"空表
+    const ddKeys=Object.keys(d);
+    const isZhen = rec.area && ddKeys.length && ddKeys.every(k=>k==='zhenti');
+    if(!isZhen){
+      h+='<div class="card"><h3>详细考情</h3><div class="kv-grid">';
+      // 兼容两套 detail 键名体系：中文键（省级/市级手写数据）与英文键（导入/县区生成）
+      const map={dui:'考试科目',duan:'题型分布',shou:'时长题量',shijian:'招考时间规律',yao:'学历/专业/户籍要求',jingz:'竞争难度/进面参考',daiyu:'待遇性价比',zhenti:'真题说明',
+        '科目':'考试科目','题型':'题型分布','时长题量':'时长题量','时间规律':'招考时间规律','要求':'学历/专业/户籍要求','竞争难度':'竞争难度/进面参考','待遇':'待遇性价比','真题':'真题说明'};
+      const shown={};
+      for(const k in map){
+        const v = d[k];
+        if(!v) continue;
+        if(shown[map[k]]) continue;
+        shown[map[k]]=true;
+        h+=`<div class="kv"><div class="k">${map[k]}</div><div class="v">${esc(v)}</div></div>`;
+      }
+      h+='</div></div>';
+    } else {
+      h+=`<div class="card"><b>真题说明</b><div class="pre-wrap">${esc(d.zhenti||'该县区本项目真题已收录于机构真题库')}</div></div>`;
     }
-    h+='</div></div>';
     if(rec.tags&&rec.tags.length) h+='<div>'+rec.tags.map(t=>`<span class="chip hl">${esc(t)}</span>`).join('')+'</div>';
     return h;
   }
